@@ -73,3 +73,6 @@ crashlytics-build.properties
 
 #machine learning model
 *.onnx
+
+#Android port
+/Logicchase_Android/*

@@ -29,7 +29,6 @@ public class AgentScript : Agent
     int[] playerGoal = new int[7];
     int[] opponentGoal = new int[7];
     VectorSensorComponent m_GoalSensor;
-    StatsRecorder m_Recorder;
 
     bool isHeuristic = false;
     public float invalid = 0;
@@ -43,21 +42,21 @@ public class AgentScript : Agent
         boxes = boxesObject.GetComponentsInChildren<Box>();
         switches = switchesObject.GetComponentsInChildren<Switch>();
         labels = labelsObject.GetComponentsInChildren<Label>();
-
-        if (gameObject.GetComponent<Unity.MLAgents.Policies.BehaviorParameters>().BehaviorType == Unity.MLAgents.Policies.BehaviorType.HeuristicOnly)
-        {
-            isHeuristic = true;
-        }
     }
 
     void Awake()
     {
-        m_Recorder = Academy.Instance.StatsRecorder;
-        
-        if(GameModeManager.gameModeManager.isHard){
-            GetComponent<Unity.MLAgents.Policies.BehaviorParameters>().Model = hardBot;
-        }else{
-            GetComponent<Unity.MLAgents.Policies.BehaviorParameters>().Model = easyBot;
+        if (gameObject.GetComponent<Unity.MLAgents.Policies.BehaviorParameters>().BehaviorType == Unity.MLAgents.Policies.BehaviorType.HeuristicOnly)
+        {
+            isHeuristic = true;
+        }
+
+        if(!isHeuristic){
+            if(GameModeManager.gameModeManager.isHard){
+                GetComponent<Unity.MLAgents.Policies.BehaviorParameters>().Model = hardBot;
+            }else{
+                GetComponent<Unity.MLAgents.Policies.BehaviorParameters>().Model = easyBot;
+            }
         }
         
         // TextWriter tw = new StreamWriter(Application.dataPath + "/record" + player.gameObject.name + ".csv",false);
@@ -80,10 +79,6 @@ public class AgentScript : Agent
 
     public override void OnEpisodeBegin()
     {
-        m_Recorder.Add("custom/" + player.gameObject.name + " Invalid", invalid);
-        // TextWriter tw = new StreamWriter(Application.dataPath + "/record" + player.gameObject.name + ".csv",true);
-        // tw.WriteLine(invalid);
-        // tw.Close();
         invalid = 0;
         playerGoal = player.getGoalArray();
         opponentGoal = opponent.getGoalArray();
