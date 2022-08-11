@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44402242, g: 0.49316543, b: 0.5722324, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10621,8 +10621,8 @@ MonoBehaviour:
   - {fileID: 901222166}
   - {fileID: 1883959808}
   invalid: 0
-  easyBot: {fileID: 5022602860645237092, guid: 8d23d71cac52b764fab070182aafdfee, type: 3}
-  hardBot: {fileID: 5022602860645237092, guid: 8af4d895e1e779141b02553f509a1c8a, type: 3}
+  easyBot: {fileID: 5022602860645237092, guid: fffa1f173363905439fc89c8aba86d25, type: 3}
+  hardBot: {fileID: 5022602860645237092, guid: 154533f4aa2715f44b3598aa75db6d63, type: 3}
 --- !u!114 &3461007545246976185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10647,7 +10647,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 0}
   m_InferenceDevice: 0
-  m_BehaviorType: 1
+  m_BehaviorType: 2
   m_BehaviorName: BotAll
   TeamId: 1
   m_UseChildSensors: 1
@@ -11129,8 +11129,8 @@ MonoBehaviour:
   - {fileID: 1581572830}
   - {fileID: 1752433289}
   invalid: 0
-  easyBot: {fileID: 5022602860645237092, guid: 8d23d71cac52b764fab070182aafdfee, type: 3}
-  hardBot: {fileID: 5022602860645237092, guid: 8af4d895e1e779141b02553f509a1c8a, type: 3}
+  easyBot: {fileID: 5022602860645237092, guid: fffa1f173363905439fc89c8aba86d25, type: 3}
+  hardBot: {fileID: 5022602860645237092, guid: 154533f4aa2715f44b3598aa75db6d63, type: 3}
 --- !u!114 &5675878127145408502
 MonoBehaviour:
   m_ObjectHideFlags: 0

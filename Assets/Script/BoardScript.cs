@@ -62,20 +62,15 @@ public class BoardScript : MonoBehaviour
 
     public GameObject winScreen;
     public GameObject loseScreen;
-    StatsRecorder m_Recorder;
     void Start()
     {
-        playerList[0] = transform.parent.FindChild("Player1").GetComponent<PlayerScript>();
-        playerList[1] = transform.parent.FindChild("Player2").GetComponent<PlayerScript>();
+        playerList[0] = transform.parent.Find("Player1").GetComponent<PlayerScript>();
+        playerList[1] = transform.parent.Find("Player2").GetComponent<PlayerScript>();
         boxes = Boxes.GetComponentsInChildren<Box>();
         gameReset();
     }
     void Awake()
     {
-        m_Recorder = Academy.Instance.StatsRecorder;
-        TextWriter tw = new StreamWriter(Application.dataPath + "/record.csv",false);
-        tw.WriteLine("turn, Player1Re, Player2Re, winner, player1Win");
-        tw.Close();
     }
     void Update()
     {
@@ -498,16 +493,6 @@ public class BoardScript : MonoBehaviour
         ruleButton.SetActive(true);
         exitButton.SetActive(true);
 
-        m_Recorder.Add("custom/Turn", turn);
-        m_Recorder.Add("custom/player1Re", player1Re);
-        m_Recorder.Add("custom/player2Re", player2Re);
-
-        // String filename = Application.dataPath + "/record.csv";
-
-        // print(turn + "," + player1Re + "," + player2Re + "," + winner + "," + player1Win);
-        // TextWriter tw = new StreamWriter(filename,true);
-        // tw.WriteLine(turn + "," + player1Re + "," + player2Re + "," + winner + "," + player1Win);
-        // tw.Close();
         player1Re = 0;
         player2Re = 0;
         turn = 0;

@@ -59,9 +59,6 @@ public class AgentScript : Agent
             }
         }
         
-        // TextWriter tw = new StreamWriter(Application.dataPath + "/record" + player.gameObject.name + ".csv",false);
-        // tw.WriteLine("Invalid");
-        // tw.Close();
     }
 
     public override void Initialize()
