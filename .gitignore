@@ -75,5 +75,12 @@ crashlytics-build.properties
 *.onnx
 
 #Android port
-/Logicchase_Android/*
-/logicAndroid/*
+/Logicchase_Android
+/logicAndroid
+
+#Web port
+/LogicWeb
+
+#vscode
+/.vscode
+/.history
