@@ -64,14 +64,6 @@ public class AgentScript : Agent
     public override void Initialize()
     {
         m_GoalSensor = this.GetComponent<VectorSensorComponent>();
-
-        // if(GameModeManager.gameModeManager.isHard){
-        //     SetModel("BotAll", hardBot);
-        //     print("HardBot");
-        // }else{
-        //     SetModel("BotAll", easyBot);
-        //     print("easyBot");
-        // }
     }
 
     public override void OnEpisodeBegin()
@@ -121,24 +113,6 @@ public class AgentScript : Agent
                 }
             }
         }
-
-        //Observe cards in player hand
-
-        // for (int i = 0; i < 7; i++)
-        // {
-        //     if (i < player.cards.Count)
-        //     {
-        //         CardType card = (CardType)System.Enum.Parse(typeof(CardType), player.cards[i]);
-        //         // sensor.AddObservation((int)card);
-        //         sensor.AddOneHotObservation((int)card, 10);
-        //     }
-        //     else
-        //     {
-        //         // sensor.AddObservation((int)CardType.NoCard);
-        //         sensor.AddOneHotObservation((int)CardType.NoCard, 10);
-        //     }
-
-        // }
 
         // Observe cards types in player hand
         int[] cardtype = { 0, 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -222,6 +196,8 @@ public class AgentScript : Agent
             actionMask.SetActionEnabled(1, board.lastMove - (int)Mathf.Ceil((float)board.lastMove / 4), false);
         }
     }
+
+    //Do action
     public override void OnActionReceived(ActionBuffers actionBuffers)
     {
         int actionChoice = actionBuffers.DiscreteActions[0];
@@ -274,19 +250,6 @@ public class AgentScript : Agent
                     RequestDecision();
                 }
             }
-
-
-            // int cardIndex = actionChoice - 1;
-            // if (cardIndex + 1 > player.cards.Count)
-            // {
-            //     print(player.gameObject.name + "INVALID: " + actionChoice + " doesn't exist");
-            //     if (!isHeuristic)
-            //     {
-            //         invalid += -0.01f;
-            //         AddReward(-0.01f);
-            //         RequestDecision();
-            //     }
-            // }
             else
             {
                 board.onClickCard(cards[cardIndex]);
@@ -325,20 +288,6 @@ public class AgentScript : Agent
                     {
                         int row = (int)Mathf.Floor((float)boardLocation / 3);
                         int col = boardLocation % 3;
-                        // if (board.gameState[col, row] is Wire && selectedCard.Equals("Wire"))
-                        // {
-                        //     // print("INVALID: cannot place wire on wire");
-                        //     if (!isHeuristic)
-                        //     {
-                        //         invalid += -0.01f;
-                        //         AddReward(-0.01f);
-                        //         RequestDecision();
-                        //     }
-                        // }
-                        // else
-                        // {
-                        //     board.onClickBox(boxes[boardLocation]);
-                        // }
                         board.onClickBox(boxes[boardLocation]);
                     }
                     else

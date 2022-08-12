@@ -58,10 +58,9 @@ public class BoardScript : MonoBehaviour
     int player1Win = 0;
     int player2Win = 0;
 
-    int winner = 0;
-
     public GameObject winScreen;
     public GameObject loseScreen;
+
     void Start()
     {
         playerList[0] = transform.parent.Find("Player1").GetComponent<PlayerScript>();
@@ -117,15 +116,7 @@ public class BoardScript : MonoBehaviour
             currentPlayer = 1;
         }
         turn++;
-        // if (turn >= max_turn)
-        // {
-        //     playerList[0].GiveReward(0);
-        //     playerList[1].GiveReward(0);
-        //     playerList[0].endEpisode();
-        //     playerList[1].endEpisode();
-        //     goalIterate--;
-        //     gameReset();
-        // }
+      
     }
 
     public void onClickDrawButton()
@@ -275,7 +266,6 @@ public class BoardScript : MonoBehaviour
         if (playerList[0] != null && currentOutput == playerList[0].getGoal())
         {
             player1Win++;
-            winner = 0;
             // print("Player 1 wins: " + player1Win + " Player 2 wins: " + player2Win);
 
             float reward = 0;
@@ -294,7 +284,6 @@ public class BoardScript : MonoBehaviour
         else if (playerList[1] != null && currentOutput == playerList[1].getGoal())
         {
             player2Win++;
-            winner = 1;
             // print("Player 1 wins: " + player1Win + " Player 2 wins: " + player2Win);
 
             float reward = 0;
@@ -395,18 +384,6 @@ public class BoardScript : MonoBehaviour
         }
     }
 
-    public bool allWires()
-    {
-        for (int i = 0; i < 3; i++)
-        {
-            for (int j = 0; j < 7; j++)
-            {
-                if (!(gameState[i, j] is Wire)) return false;
-            }
-        }
-        return true;
-    }
-
     public bool replaceGate(string gate, int row, int column, int input2 = -1)
     {
         if (row < 0 || column < 0 || String.Equals(String.Concat(row.ToString(), column.ToString()), recentMove) || column == input2)
@@ -419,15 +396,6 @@ public class BoardScript : MonoBehaviour
             switch (gate)
             {
                 case "Wire":
-                    // if (gameState[row, column] is Wire)
-                    // {
-                    //     print("Illegal Action Wire");
-                    //     return false;
-                    // }
-                    // else
-                    // {
-                    //     gameState[row, column] = new Wire(outputState[row, column]);
-                    // }
                     gameState[row, column] = new Wire(outputState[row, column]);
                     break;
                 case "NOT":
@@ -559,59 +527,6 @@ public class BoardScript : MonoBehaviour
         isGameOver = false;
     }
 
-    public float calcScore(int[] previousState, int[] currentState, int[] yourGoal, int[] opponentGoal)
-    {
-        float score = 0, reachGoalFactor = 1, stopOpponentFactor = 1;
-        int[] differences = compareArray(previousState, currentState);
-        int[] goalDifference = compareArray(yourGoal, opponentGoal);
-        int[] currentYourGoalSimilar = compareArray(currentState, yourGoal);
-        int[] currentOpponentGoalSimilar = compareArray(currentState, opponentGoal);
-        int[] previousYourGoalSimilar = compareArray(previousState, yourGoal);
-        int[] previousOpponentGoalsSimilar = compareArray(previousState, opponentGoal);
-
-        if (!isArrayEqual(previousState, currentState))
-        {
-            //Similar(+) - Difference(-) to your goal than previous 7-seg
-            //play to reach your goal --> more matters when you are close to reach the goal
-            reachGoalFactor = countZeros(previousYourGoalSimilar) / (countZeros(goalDifference) + 2);
-            score += (countZeros(currentYourGoalSimilar) - countZeros(previousYourGoalSimilar)) * reachGoalFactor;
-
-            //Similar(-) - Difference(+) to opponent's goal than previous 7-seg
-            //play to stop opponent's goal --> more matters when opponenet is close to reach the goal
-            stopOpponentFactor = countZeros(previousOpponentGoalsSimilar) / (countZeros(goalDifference) + 2);
-            score += (countZeros(previousOpponentGoalsSimilar) - countZeros(currentOpponentGoalSimilar)) * stopOpponentFactor;
-        }
-        return score / 10;
-    }
-
-    public float calcScore2(int[] previousState, int[] currentState, int[] yourGoal, int[] opponentGoal)
-    {
-        float score = 0, reachGoalFactor = 1, stopOpponentFactor = 1;
-        int[] differences = compareArray(previousState, currentState);
-        int[] goalDifference = compareArray(yourGoal, opponentGoal);
-        int[] currentYourGoalSimilar = compareArray(currentState, yourGoal);
-        int[] currentOpponentGoalSimilar = compareArray(currentState, opponentGoal);
-        int[] previousYourGoalSimilar = compareArray(previousState, yourGoal);
-        int[] previousOpponentGoalsSimilar = compareArray(previousState, opponentGoal);
-
-        //Similar(+) - Difference(-) to your goal than previous 7-seg
-        //play to reach your goal --> more matters when you are close to reach the goal
-        //similar goal focus on reach the goal
-        reachGoalFactor = countZeros(previousYourGoalSimilar) * (countZeros(goalDifference));
-        score += (countZeros(currentYourGoalSimilar) - countZeros(previousYourGoalSimilar)) * reachGoalFactor;
-
-        //Similar(-) - Difference(+) to opponent's goal than previous 7-seg
-        //play to stop opponent's goal --> more matters when opponenet is close to reach the goal
-        //different goal focus on stop opponent
-        stopOpponentFactor = countZeros(previousOpponentGoalsSimilar) * (7 - countZeros(goalDifference));
-        score += (countZeros(previousOpponentGoalsSimilar) - countZeros(currentOpponentGoalSimilar)) * stopOpponentFactor;
-
-        if (score > 0) return (float)Math.Log(1 + score) / 60;
-        // if (score < 0) return (float)-Math.Log(1 + Math.Abs(score)) / 6;
-
-        return 0;
-    }
-
     public float calcScore3(int[] previousState, int[] currentState, int[] yourGoal, int[] opponentGoal, int turn, int max_turn, int min_turn)
     {
         float score = 0, reachGoalFactor = 1, stopOpponentFactor = 1;
@@ -645,20 +560,6 @@ public class BoardScript : MonoBehaviour
             // else score = -1;
         }
         return (float)score * 0.75f;
-    }
-
-    public float calcScore4(int[] previousState, int[] currentState, int[] yourGoal, int[] opponentGoal, int turn, int max_turn, int min_turn)
-    {
-        float score = 0;
-        int[] currentYourGoalSimilar = compareArray(currentState, yourGoal);
-        int[] previousYourGoalSimilar = compareArray(previousState, yourGoal);
-        float currentGoalCount = countZeros(currentYourGoalSimilar);
-        float previousGoalCount = countZeros(previousYourGoalSimilar);
-        if (currentGoalCount - previousGoalCount > 0)
-        {
-            score = (float)currentGoalCount * currentGoalCount / 2000;
-        }
-        return score;
     }
 
     public int[] compareArray(int[] arr1, int[] arr2)

@@ -35,6 +35,7 @@ public class LogicGate
     {
         return output;
     }
+    
     public bool setOutput(int output)
     {
         this.output = output;

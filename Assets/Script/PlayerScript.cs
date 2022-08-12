@@ -59,6 +59,7 @@ public class PlayerScript : MonoBehaviour
     {
         this.goalArray = goalArray;
     }
+    
     public int getGoal()
     {
         return goal;
