@@ -65,7 +65,7 @@ public class AgentScript : Agent
     {
         m_GoalSensor = this.GetComponent<VectorSensorComponent>();
     }
-
+    
     public override void OnEpisodeBegin()
     {
         invalid = 0;
