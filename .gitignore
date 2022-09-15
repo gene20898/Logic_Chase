@@ -83,7 +83,7 @@ crashlytics-build.properties
 
 #vscode
 /.vscode
-/.history
+**/.history
 
 #TextMesh Pro
 /[Aa]ssets/TextMesh Pro
