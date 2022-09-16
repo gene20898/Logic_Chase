@@ -1288,7 +1288,7 @@ PrefabInstance:
     - target: {fileID: 8864126738229914367, guid: 7c45e432ef6c7974089b860f93aaf48d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 1004853101}
+      objectReference: {fileID: 370777148}
     - target: {fileID: 8864126738229914367, guid: 7c45e432ef6c7974089b860f93aaf48d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: Card, Assembly-CSharp
@@ -1628,8 +1628,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchSpriteList:
-  - {fileID: 21300000, guid: 5f9230faa83c6be47b3f2d818b5c8a08, type: 3}
-  - {fileID: 21300000, guid: 6b9d0ea30376212408877ec6595d2bb8, type: 3}
+  - {fileID: 21300000, guid: 86a39a5bb6ce6f146aa95f4e0111d9b3, type: 3}
+  - {fileID: 21300000, guid: d5f84e840c6b7a04cb70a17a80033613, type: 3}
   board: {fileID: 956478171}
 --- !u!1001 &552471591
 PrefabInstance:
@@ -4894,8 +4894,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchSpriteList:
-  - {fileID: 21300000, guid: 5f9230faa83c6be47b3f2d818b5c8a08, type: 3}
-  - {fileID: 21300000, guid: 6b9d0ea30376212408877ec6595d2bb8, type: 3}
+  - {fileID: 21300000, guid: 86a39a5bb6ce6f146aa95f4e0111d9b3, type: 3}
+  - {fileID: 21300000, guid: d5f84e840c6b7a04cb70a17a80033613, type: 3}
   board: {fileID: 956478171}
 --- !u!1001 &1201075158
 PrefabInstance:
@@ -5677,8 +5677,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchSpriteList:
-  - {fileID: 21300000, guid: 5f9230faa83c6be47b3f2d818b5c8a08, type: 3}
-  - {fileID: 21300000, guid: 6b9d0ea30376212408877ec6595d2bb8, type: 3}
+  - {fileID: 21300000, guid: 86a39a5bb6ce6f146aa95f4e0111d9b3, type: 3}
+  - {fileID: 21300000, guid: d5f84e840c6b7a04cb70a17a80033613, type: 3}
   board: {fileID: 956478171}
 --- !u!1001 &1394801770
 PrefabInstance:
@@ -6271,8 +6271,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchSpriteList:
-  - {fileID: 21300000, guid: 5f9230faa83c6be47b3f2d818b5c8a08, type: 3}
-  - {fileID: 21300000, guid: 6b9d0ea30376212408877ec6595d2bb8, type: 3}
+  - {fileID: 21300000, guid: 86a39a5bb6ce6f146aa95f4e0111d9b3, type: 3}
+  - {fileID: 21300000, guid: d5f84e840c6b7a04cb70a17a80033613, type: 3}
   board: {fileID: 956478171}
 --- !u!224 &1562831067 stripped
 RectTransform:
@@ -6292,8 +6292,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchSpriteList:
-  - {fileID: 21300000, guid: 5f9230faa83c6be47b3f2d818b5c8a08, type: 3}
-  - {fileID: 21300000, guid: 6b9d0ea30376212408877ec6595d2bb8, type: 3}
+  - {fileID: 21300000, guid: 86a39a5bb6ce6f146aa95f4e0111d9b3, type: 3}
+  - {fileID: 21300000, guid: d5f84e840c6b7a04cb70a17a80033613, type: 3}
   board: {fileID: 956478171}
 --- !u!1001 &1569484146
 PrefabInstance:
@@ -6978,8 +6978,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchSpriteList:
-  - {fileID: 21300000, guid: 5f9230faa83c6be47b3f2d818b5c8a08, type: 3}
-  - {fileID: 21300000, guid: 6b9d0ea30376212408877ec6595d2bb8, type: 3}
+  - {fileID: 21300000, guid: 86a39a5bb6ce6f146aa95f4e0111d9b3, type: 3}
+  - {fileID: 21300000, guid: d5f84e840c6b7a04cb70a17a80033613, type: 3}
   board: {fileID: 956478171}
 --- !u!1001 &1786470568
 PrefabInstance:
@@ -8040,8 +8040,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   switchSpriteList:
-  - {fileID: 21300000, guid: 5f9230faa83c6be47b3f2d818b5c8a08, type: 3}
-  - {fileID: 21300000, guid: 6b9d0ea30376212408877ec6595d2bb8, type: 3}
+  - {fileID: 21300000, guid: 86a39a5bb6ce6f146aa95f4e0111d9b3, type: 3}
+  - {fileID: 21300000, guid: d5f84e840c6b7a04cb70a17a80033613, type: 3}
   board: {fileID: 956478171}
 --- !u!1001 &2010600405
 PrefabInstance:
@@ -8491,7 +8491,7 @@ PrefabInstance:
     - target: {fileID: 8864126738229914367, guid: 7c45e432ef6c7974089b860f93aaf48d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 370777148}
+      objectReference: {fileID: 340885162}
     - target: {fileID: 8864126738229914367, guid: 7c45e432ef6c7974089b860f93aaf48d, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: Card, Assembly-CSharp

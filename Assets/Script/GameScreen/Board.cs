@@ -146,6 +146,7 @@ public class Board : MonoBehaviour
 
     public bool ReplaceGate(string gate, int row, int column, int input2 = -1)
     {
+        print("Action" + "row " + row + " column " + column + "input2 " + input2 + "recent: " + lastMove);
         if (row < 0 || column < 0 || column * 4 + row + 1 == lastMove || column == input2)
         {
             print("Illegal Action" + "row " + row + " column " + column + "input2 " + input2 + "recent: " + lastMove);

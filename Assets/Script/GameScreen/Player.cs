@@ -44,6 +44,7 @@ public class Player : MonoBehaviour
     
     public void StartTurn(){
         Debug.Log(this.gameObject.name + " starts turn");
+        print(cards);
         isTurn = true;
         if(OnTurnStart != null){
             OnTurnStart();
@@ -51,7 +52,7 @@ public class Player : MonoBehaviour
     }
 
     public void EndTurn(){
-        Debug.Log(this.gameObject.name + " ends turn");
+        //Debug.Log(this.gameObject.name + " ends turn");
         isTurn = false;
         if(OnTurnEnd != null){
             OnTurnEnd();
@@ -60,7 +61,7 @@ public class Player : MonoBehaviour
     }
     
     public void Reset(){
-        Debug.Log(this.gameObject.name + "Reset");
+        //Debug.Log(this.gameObject.name + "Reset");
         cards.Clear();
         AddCard(4);
         if(OnUpdate != null){
@@ -128,12 +129,10 @@ public class Player : MonoBehaviour
         int row = gateIndex % 3;
         int col = gateIndex / 3;
         bool result = false;
-        if(cardType == "Switch" && switchIndex != -1)
-            result = board.ToggleSwitch(switchIndex) == true;
-        else if ((cardType == "Wire" || cardType == "NOT") && gateIndex != -1)
-            result = board.ReplaceGate(cardType, row, col) == true;
-        else if (gateIndex != -1 && inputRow != -1)
-            result = board.ReplaceGate(cardType, row, col, inputRow);
+        if(cardType == "Switch" && switchIndex != -1) result = board.ToggleSwitch(switchIndex) == true;
+        else if ((cardType == "Wire" || cardType == "NOT") && gateIndex != -1) result = board.ReplaceGate(cardType, row, col) == true;
+        else if (gateIndex != -1 && inputRow != -1) result = board.ReplaceGate(cardType, row, col, inputRow);
+        print(result);
         
         if(result == true){
             cards.RemoveAt(cardIndex);
@@ -142,7 +141,8 @@ public class Player : MonoBehaviour
             }
             this.EndTurn();
             return true;
-        }else{
+        }
+        else{
             return false;
         }
     }

@@ -37,20 +37,20 @@ public class AgentScript : Agent
 
     public override void Initialize()
     {
-        Debug.Log("Initialize");
+        //Debug.Log("Initialize");
         m_GoalSensor = this.GetComponent<VectorSensorComponent>();
     }
 
     public override void OnEpisodeBegin()
     {
-        Debug.Log("OnEpisodeBegin");
+        //Debug.Log("OnEpisodeBegin");
         playerGoal = player.GetGoalArray();
         opponentGoal = opponent.GetGoalArray();
     }
 
     public override async void CollectObservations(VectorSensor sensor)
     {
-        Debug.Log("observation");
+        //Debug.Log("observation");
         //Observe board output
         for (int i = 0; i < board.outputState.GetLength(0); i++)
         {
@@ -103,7 +103,7 @@ public class AgentScript : Agent
         {
             sensor.AddObservation(cardtype[i]);
         }
-        Debug.Log(cardtype);
+        //Debug.Log(cardtype);
 
         //Observe enable bit
         for (int i = 0; i < board.outputState.GetLength(0); i++)
@@ -139,13 +139,13 @@ public class AgentScript : Agent
                 m_GoalSensor.GetSensor().AddObservation(opponentGoal[i]);
             }
         }
-        Debug.Log("Observation done");
+        //Debug.Log("Observation done");
     }
 
     //Mask invalid action
     public override void WriteDiscreteActionMask(IDiscreteActionMask actionMask)
     {
-        Debug.Log("WriteDiscreteActionMask");
+        //Debug.Log("WriteDiscreteActionMask");
         List<string> cards = player.GetCard();
         if (cards.Count > 5)
         {
@@ -176,13 +176,13 @@ public class AgentScript : Agent
         {
             actionMask.SetActionEnabled(1, board.lastMove - (int)Mathf.Ceil((float)board.lastMove / 4), false);
         }
-        Debug.Log("WriteDiscreteActionMask done");
+        //Debug.Log("WriteDiscreteActionMask done");
     }
 
     //Do action
     public override void OnActionReceived(ActionBuffers actionBuffers)
     {
-        Debug.Log("Action");
+        //Debug.Log("Action");
         int actionChoice = actionBuffers.DiscreteActions[0];
         int boardLocation = actionBuffers.DiscreteActions[1];
         int inputRowChoice = actionBuffers.DiscreteActions[2];
@@ -190,12 +190,12 @@ public class AgentScript : Agent
 
         botActionHandler.SetAction(actionChoice, boardLocation, inputRowChoice, switchLocation);      
       
-        Debug.Log("Action Done");
+        //Debug.Log("Action Done");
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
     {
-        Debug.Log("Heuristic");
+        //Debug.Log("Heuristic");
         ActionSegment<int> discreteActionsOut = actionsOut.DiscreteActions;
         discreteActionsOut[0] = 0;
         discreteActionsOut[1] = 0;

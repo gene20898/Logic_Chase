@@ -40,11 +40,13 @@ public class PlayerActionHandler : MonoBehaviour
     public void updateCardUI()
     {
         List<string> cards = player.GetCard();
+        print(cards);
         for (int i = 0; i < cardSlots.Length; i++)
         {
             if (i < cards.Count)
             {
                 cardSlots[i].setCard(cards[i], i);
+                Debug.Log(cards[i] + i + " " + cardSlots[i].getType() + cardSlots[i].getIndex());
             }
             else
             {
@@ -55,7 +57,7 @@ public class PlayerActionHandler : MonoBehaviour
 
     public void startTurn()
     {
-        Debug.Log(player.gameObject.name + " starts turn");
+        //Debug.Log(player.gameObject.name + " starts turn");
         state = State.WaitForMove;
     }
 
@@ -74,10 +76,11 @@ public class PlayerActionHandler : MonoBehaviour
 
     public void onClickCard(Card card)
     {
-        Debug.Log("onClickCard ");
+        print(card.getIndex());
+        //Debug.Log("onClickCard ");
         if(state == State.WaitForMove)
         {
-            Debug.Log("onClickCard pasas");
+            Debug.Log("onClickCard pass");
             selectedCardIndex = card.getIndex();
             if(card.getType() == "Switch"){
                 state = State.SelectSwitch;
@@ -86,13 +89,14 @@ public class PlayerActionHandler : MonoBehaviour
                 state = State.SelectGate;
             }
         }
+        
     }
 
     public void onClickCell(Gate gate)
     {
         if(state == State.SelectGate)
         {
-            Debug.Log("clickGate");
+            //Debug.Log("clickGate");
             gateIndex = gate.transform.GetSiblingIndex();
             state = State.SelectInput;
             UseCard();
