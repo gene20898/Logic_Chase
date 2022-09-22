@@ -40,6 +40,7 @@ public class Board : MonoBehaviour
     public LogicGate[,] gameState = new LogicGate[3, 7];
 
     public event Action OnReset;
+    public event Action OnUpdate;
 
     // Start is called before the first frame update
     void Start()
@@ -243,6 +244,11 @@ public class Board : MonoBehaviour
             }
         }
         updateSwitchUI();
+
+        if(OnUpdate != null){
+            OnUpdate();
+        }
+
         checkOutput();
         return true;
     }
@@ -294,5 +300,11 @@ public class Board : MonoBehaviour
 
     void gameOver(){
         drawButton.SetActive(false);
+    }
+
+    public int[] getOutput()
+    {
+        int[] output = { outputState[3, 0], outputState[3, 1], outputState[3, 2], outputState[3, 3], outputState[3, 4], outputState[3, 5], outputState[3, 6] };
+        return output;
     }
 }
