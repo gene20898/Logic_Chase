@@ -132,7 +132,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3072583164555186091, guid: a58003bcf94c03b4498902682d82971d, type: 3}
       propertyPath: m_Name
-      value: 7seg (2)
+      value: F
       objectReference: {fileID: 0}
     - target: {fileID: 7087803853476065500, guid: a58003bcf94c03b4498902682d82971d, type: 3}
       propertyPath: m_Pivot.x
@@ -464,7 +464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094921448262818020, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
       propertyPath: m_Name
-      value: Gate (11)
+      value: GateG3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
@@ -842,7 +842,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094921448262818020, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
       propertyPath: m_Name
-      value: Gate (18)
+      value: GateC1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
@@ -855,7 +855,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3072583164555186091, guid: a58003bcf94c03b4498902682d82971d, type: 3}
       propertyPath: m_Name
-      value: 7seg (5)
+      value: D
       objectReference: {fileID: 0}
     - target: {fileID: 7087803853476065500, guid: a58003bcf94c03b4498902682d82971d, type: 3}
       propertyPath: m_Pivot.x
@@ -957,7 +957,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3072583164555186091, guid: a58003bcf94c03b4498902682d82971d, type: 3}
       propertyPath: m_Name
-      value: 7seg (6)
+      value: C
       objectReference: {fileID: 0}
     - target: {fileID: 7087803853476065500, guid: a58003bcf94c03b4498902682d82971d, type: 3}
       propertyPath: m_Pivot.x
@@ -1309,7 +1309,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3072583164555186091, guid: a58003bcf94c03b4498902682d82971d, type: 3}
       propertyPath: m_Name
-      value: 7seg (1)
+      value: A
       objectReference: {fileID: 0}
     - target: {fileID: 7087803853476065500, guid: a58003bcf94c03b4498902682d82971d, type: 3}
       propertyPath: m_Pivot.x
@@ -1890,7 +1890,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3072583164555186091, guid: a58003bcf94c03b4498902682d82971d, type: 3}
       propertyPath: m_Name
-      value: 7seg
+      value: B
       objectReference: {fileID: 0}
     - target: {fileID: 7087803853476065500, guid: a58003bcf94c03b4498902682d82971d, type: 3}
       propertyPath: m_Pivot.x
@@ -2216,7 +2216,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3072583164555186091, guid: a58003bcf94c03b4498902682d82971d, type: 3}
       propertyPath: m_Name
-      value: 7seg (3)
+      value: G
       objectReference: {fileID: 0}
     - target: {fileID: 7087803853476065500, guid: a58003bcf94c03b4498902682d82971d, type: 3}
       propertyPath: m_Pivot.x
@@ -2328,7 +2328,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2843852394357029014, guid: 78ca6c533d0dc86499e451ba0b48b875, type: 3}
       propertyPath: m_Name
-      value: Switch (4)
+      value: SwitchE
       objectReference: {fileID: 0}
     - target: {fileID: 3597696719797045612, guid: 78ca6c533d0dc86499e451ba0b48b875, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2582,7 +2582,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2843852394357029014, guid: 78ca6c533d0dc86499e451ba0b48b875, type: 3}
       propertyPath: m_Name
-      value: Switch (1)
+      value: SwitchA
       objectReference: {fileID: 0}
     - target: {fileID: 3597696719797045612, guid: 78ca6c533d0dc86499e451ba0b48b875, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2855,7 +2855,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094921448262818020, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
       propertyPath: m_Name
-      value: Gate (20)
+      value: GateC3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
@@ -3099,7 +3099,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094921448262818020, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
       propertyPath: m_Name
-      value: Gate (6)
+      value: GateF1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
@@ -3256,7 +3256,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094921448262818020, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
       propertyPath: m_Name
-      value: Gate (9)
+      value: GateG1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
@@ -3418,7 +3418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094921448262818020, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
       propertyPath: m_Name
-      value: Gate (12)
+      value: GateE1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
@@ -3575,7 +3575,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094921448262818020, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
       propertyPath: m_Name
-      value: Gate (4)
+      value: GateA2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
@@ -3930,7 +3930,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094921448262818020, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
       propertyPath: m_Name
-      value: Gate (5)
+      value: GateA3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
@@ -4216,7 +4216,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094921448262818020, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
       propertyPath: m_Name
-      value: Gate (19)
+      value: GateC2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
@@ -4586,7 +4586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094921448262818020, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
       propertyPath: m_Name
-      value: Gate (8)
+      value: GateF3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
@@ -4599,7 +4599,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2843852394357029014, guid: 78ca6c533d0dc86499e451ba0b48b875, type: 3}
       propertyPath: m_Name
-      value: Switch (6)
+      value: SwitchC
       objectReference: {fileID: 0}
     - target: {fileID: 3597696719797045612, guid: 78ca6c533d0dc86499e451ba0b48b875, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -4872,7 +4872,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094921448262818020, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
       propertyPath: m_Name
-      value: Gate (14)
+      value: GateE3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
@@ -4906,7 +4906,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2843852394357029014, guid: 78ca6c533d0dc86499e451ba0b48b875, type: 3}
       propertyPath: m_Name
-      value: Switch (3)
+      value: SwitchG
       objectReference: {fileID: 0}
     - target: {fileID: 3597696719797045612, guid: 78ca6c533d0dc86499e451ba0b48b875, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -5247,7 +5247,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2843852394357029014, guid: 78ca6c533d0dc86499e451ba0b48b875, type: 3}
       propertyPath: m_Name
-      value: Switch (5)
+      value: SwitchD
       objectReference: {fileID: 0}
     - target: {fileID: 3597696719797045612, guid: 78ca6c533d0dc86499e451ba0b48b875, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -5520,7 +5520,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094921448262818020, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
       propertyPath: m_Name
-      value: Gate (16)
+      value: GateD2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
@@ -5833,7 +5833,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094921448262818020, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
       propertyPath: m_Name
-      value: Gate (3)
+      value: GateA1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
@@ -6114,7 +6114,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094921448262818020, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
       propertyPath: m_Name
-      value: Gate (17)
+      value: GateD3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
@@ -6304,7 +6304,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3072583164555186091, guid: a58003bcf94c03b4498902682d82971d, type: 3}
       propertyPath: m_Name
-      value: 7seg (4)
+      value: E
       objectReference: {fileID: 0}
     - target: {fileID: 7087803853476065500, guid: a58003bcf94c03b4498902682d82971d, type: 3}
       propertyPath: m_Pivot.x
@@ -6406,7 +6406,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2843852394357029014, guid: 78ca6c533d0dc86499e451ba0b48b875, type: 3}
       propertyPath: m_Name
-      value: Switch (2)
+      value: SwitchF
       objectReference: {fileID: 0}
     - target: {fileID: 3597696719797045612, guid: 78ca6c533d0dc86499e451ba0b48b875, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -6775,7 +6775,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094921448262818020, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
       propertyPath: m_Name
-      value: Gate (2)
+      value: GateB3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
@@ -7134,7 +7134,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094921448262818020, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
       propertyPath: m_Name
-      value: Gate (15)
+      value: GateD1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
@@ -7291,7 +7291,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094921448262818020, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
       propertyPath: m_Name
-      value: Gate (10)
+      value: GateG2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
@@ -8196,7 +8196,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094921448262818020, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
       propertyPath: m_Name
-      value: Gate (1)
+      value: GateB2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
@@ -8876,7 +8876,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094921448262818020, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
       propertyPath: m_Name
-      value: Gate (7)
+      value: GateF2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
@@ -9033,7 +9033,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094921448262818020, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
       propertyPath: m_Name
-      value: Gate (13)
+      value: GateE2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
@@ -9046,7 +9046,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2843852394357029014, guid: 78ca6c533d0dc86499e451ba0b48b875, type: 3}
       propertyPath: m_Name
-      value: Switch
+      value: SwitchB
       objectReference: {fileID: 0}
     - target: {fileID: 3597696719797045612, guid: 78ca6c533d0dc86499e451ba0b48b875, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -9343,7 +9343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7094921448262818020, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
       propertyPath: m_Name
-      value: Gate
+      value: GateB1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6bddc169e8459fa47a8fb0178040400c, type: 3}
