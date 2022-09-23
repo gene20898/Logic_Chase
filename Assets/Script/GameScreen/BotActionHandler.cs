@@ -70,7 +70,7 @@ public class BotActionHandler : MonoBehaviour
                 result = bot.DrawCard();
                 break;
             case 1: 
-                result = bot.UseCard(cardIndex, switchIndex);
+                result = bot.UseCard(cardIndex, -1, -1, switchIndex);
                 break;
             case 2: case 3:
                 result = bot.UseCard(cardIndex, gateIndex);
