@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
 
-public class Gate : MonoBehaviour
+public class Gate : MonoBehaviour, IDropHandler
 {
     string type;
     int input;
@@ -70,6 +71,10 @@ public class Gate : MonoBehaviour
     {
         isLatest = false;
         button.interactable = true;
+    }
+
+    public void OnDrop(PointerEventData eventData){
+        Debug.Log(type+" on drop");
     }
 }
 
