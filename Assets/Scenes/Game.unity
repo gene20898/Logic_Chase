@@ -1544,6 +1544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e3e9016751a474d91d19e2cd373037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   board: {fileID: 956478171}
   boxFaceSprites:
   - {fileID: 21300000, guid: 981c688580386604da649a77bb830558, type: 3}
@@ -1574,6 +1575,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5fa0dfd755b5bf247970d588e501fccf, type: 3}
   - {fileID: 21300000, guid: 99bf040d780b2804e826e4b549c7522e, type: 3}
   - {fileID: 21300000, guid: de6a01e74257e3f4c88130390d250cde, type: 3}
+  - {fileID: 21300000, guid: c0c53b7c7f3d904489e997b3388085a6, type: 3}
+  - {fileID: 21300000, guid: f66941595a577d74b91ee56445b385b2, type: 3}
+  - {fileID: 21300000, guid: ecc258357160fa242bafed718cbcafbe, type: 3}
+  - {fileID: 21300000, guid: 04a1936217b4e5e45995e75162bf1044, type: 3}
+  - {fileID: 21300000, guid: 9bed9514fcbf16f459b1ce7f606f7a4a, type: 3}
+  - {fileID: 21300000, guid: 9c2a752a80133004584c94f17f328bc3, type: 3}
+  - {fileID: 21300000, guid: 9b03514e2f49a354e8e717785c6a28de, type: 3}
+  - {fileID: 21300000, guid: a653b807fad82d143b4b956cfa88ca83, type: 3}
   isLatest: 0
 --- !u!224 &501890417 stripped
 RectTransform:
@@ -1679,6 +1688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 987aa6470148faf4498a3ae449c7b59a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   switchSpriteList:
   - {fileID: 21300000, guid: 86a39a5bb6ce6f146aa95f4e0111d9b3, type: 3}
   - {fileID: 21300000, guid: d5f84e840c6b7a04cb70a17a80033613, type: 3}
@@ -1922,6 +1932,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e3e9016751a474d91d19e2cd373037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   board: {fileID: 956478171}
   boxFaceSprites:
   - {fileID: 21300000, guid: 981c688580386604da649a77bb830558, type: 3}
@@ -1952,6 +1963,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5fa0dfd755b5bf247970d588e501fccf, type: 3}
   - {fileID: 21300000, guid: 99bf040d780b2804e826e4b549c7522e, type: 3}
   - {fileID: 21300000, guid: de6a01e74257e3f4c88130390d250cde, type: 3}
+  - {fileID: 21300000, guid: c0c53b7c7f3d904489e997b3388085a6, type: 3}
+  - {fileID: 21300000, guid: f66941595a577d74b91ee56445b385b2, type: 3}
+  - {fileID: 21300000, guid: ecc258357160fa242bafed718cbcafbe, type: 3}
+  - {fileID: 21300000, guid: 04a1936217b4e5e45995e75162bf1044, type: 3}
+  - {fileID: 21300000, guid: 9bed9514fcbf16f459b1ce7f606f7a4a, type: 3}
+  - {fileID: 21300000, guid: 9c2a752a80133004584c94f17f328bc3, type: 3}
+  - {fileID: 21300000, guid: 9b03514e2f49a354e8e717785c6a28de, type: 3}
+  - {fileID: 21300000, guid: a653b807fad82d143b4b956cfa88ca83, type: 3}
   isLatest: 0
 --- !u!1001 &611654497
 PrefabInstance:
@@ -2344,6 +2363,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e3e9016751a474d91d19e2cd373037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   board: {fileID: 956478171}
   boxFaceSprites:
   - {fileID: 21300000, guid: 981c688580386604da649a77bb830558, type: 3}
@@ -2374,6 +2394,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5fa0dfd755b5bf247970d588e501fccf, type: 3}
   - {fileID: 21300000, guid: 99bf040d780b2804e826e4b549c7522e, type: 3}
   - {fileID: 21300000, guid: de6a01e74257e3f4c88130390d250cde, type: 3}
+  - {fileID: 21300000, guid: c0c53b7c7f3d904489e997b3388085a6, type: 3}
+  - {fileID: 21300000, guid: f66941595a577d74b91ee56445b385b2, type: 3}
+  - {fileID: 21300000, guid: ecc258357160fa242bafed718cbcafbe, type: 3}
+  - {fileID: 21300000, guid: 04a1936217b4e5e45995e75162bf1044, type: 3}
+  - {fileID: 21300000, guid: 9bed9514fcbf16f459b1ce7f606f7a4a, type: 3}
+  - {fileID: 21300000, guid: 9c2a752a80133004584c94f17f328bc3, type: 3}
+  - {fileID: 21300000, guid: 9b03514e2f49a354e8e717785c6a28de, type: 3}
+  - {fileID: 21300000, guid: a653b807fad82d143b4b956cfa88ca83, type: 3}
   isLatest: 0
 --- !u!1 &715998062
 GameObject:
@@ -2827,6 +2855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e3e9016751a474d91d19e2cd373037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   board: {fileID: 956478171}
   boxFaceSprites:
   - {fileID: 21300000, guid: 981c688580386604da649a77bb830558, type: 3}
@@ -2857,6 +2886,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5fa0dfd755b5bf247970d588e501fccf, type: 3}
   - {fileID: 21300000, guid: 99bf040d780b2804e826e4b549c7522e, type: 3}
   - {fileID: 21300000, guid: de6a01e74257e3f4c88130390d250cde, type: 3}
+  - {fileID: 21300000, guid: c0c53b7c7f3d904489e997b3388085a6, type: 3}
+  - {fileID: 21300000, guid: f66941595a577d74b91ee56445b385b2, type: 3}
+  - {fileID: 21300000, guid: ecc258357160fa242bafed718cbcafbe, type: 3}
+  - {fileID: 21300000, guid: 04a1936217b4e5e45995e75162bf1044, type: 3}
+  - {fileID: 21300000, guid: 9bed9514fcbf16f459b1ce7f606f7a4a, type: 3}
+  - {fileID: 21300000, guid: 9c2a752a80133004584c94f17f328bc3, type: 3}
+  - {fileID: 21300000, guid: 9b03514e2f49a354e8e717785c6a28de, type: 3}
+  - {fileID: 21300000, guid: a653b807fad82d143b4b956cfa88ca83, type: 3}
   isLatest: 0
 --- !u!1001 &825007144
 PrefabInstance:
@@ -4260,6 +4297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e3e9016751a474d91d19e2cd373037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   board: {fileID: 956478171}
   boxFaceSprites:
   - {fileID: 21300000, guid: 981c688580386604da649a77bb830558, type: 3}
@@ -4290,6 +4328,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5fa0dfd755b5bf247970d588e501fccf, type: 3}
   - {fileID: 21300000, guid: 99bf040d780b2804e826e4b549c7522e, type: 3}
   - {fileID: 21300000, guid: de6a01e74257e3f4c88130390d250cde, type: 3}
+  - {fileID: 21300000, guid: c0c53b7c7f3d904489e997b3388085a6, type: 3}
+  - {fileID: 21300000, guid: f66941595a577d74b91ee56445b385b2, type: 3}
+  - {fileID: 21300000, guid: ecc258357160fa242bafed718cbcafbe, type: 3}
+  - {fileID: 21300000, guid: 04a1936217b4e5e45995e75162bf1044, type: 3}
+  - {fileID: 21300000, guid: 9bed9514fcbf16f459b1ce7f606f7a4a, type: 3}
+  - {fileID: 21300000, guid: 9c2a752a80133004584c94f17f328bc3, type: 3}
+  - {fileID: 21300000, guid: 9b03514e2f49a354e8e717785c6a28de, type: 3}
+  - {fileID: 21300000, guid: a653b807fad82d143b4b956cfa88ca83, type: 3}
   isLatest: 0
 --- !u!1001 &1047855228
 PrefabInstance:
@@ -4771,6 +4817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e3e9016751a474d91d19e2cd373037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   board: {fileID: 956478171}
   boxFaceSprites:
   - {fileID: 21300000, guid: 981c688580386604da649a77bb830558, type: 3}
@@ -4801,6 +4848,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5fa0dfd755b5bf247970d588e501fccf, type: 3}
   - {fileID: 21300000, guid: 99bf040d780b2804e826e4b549c7522e, type: 3}
   - {fileID: 21300000, guid: de6a01e74257e3f4c88130390d250cde, type: 3}
+  - {fileID: 21300000, guid: c0c53b7c7f3d904489e997b3388085a6, type: 3}
+  - {fileID: 21300000, guid: f66941595a577d74b91ee56445b385b2, type: 3}
+  - {fileID: 21300000, guid: ecc258357160fa242bafed718cbcafbe, type: 3}
+  - {fileID: 21300000, guid: 04a1936217b4e5e45995e75162bf1044, type: 3}
+  - {fileID: 21300000, guid: 9bed9514fcbf16f459b1ce7f606f7a4a, type: 3}
+  - {fileID: 21300000, guid: 9c2a752a80133004584c94f17f328bc3, type: 3}
+  - {fileID: 21300000, guid: 9b03514e2f49a354e8e717785c6a28de, type: 3}
+  - {fileID: 21300000, guid: a653b807fad82d143b4b956cfa88ca83, type: 3}
   isLatest: 0
 --- !u!1 &1134450490
 GameObject:
@@ -5427,6 +5482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 987aa6470148faf4498a3ae449c7b59a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   switchSpriteList:
   - {fileID: 21300000, guid: 86a39a5bb6ce6f146aa95f4e0111d9b3, type: 3}
   - {fileID: 21300000, guid: d5f84e840c6b7a04cb70a17a80033613, type: 3}
@@ -5577,6 +5633,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e3e9016751a474d91d19e2cd373037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   board: {fileID: 956478171}
   boxFaceSprites:
   - {fileID: 21300000, guid: 981c688580386604da649a77bb830558, type: 3}
@@ -5607,6 +5664,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5fa0dfd755b5bf247970d588e501fccf, type: 3}
   - {fileID: 21300000, guid: 99bf040d780b2804e826e4b549c7522e, type: 3}
   - {fileID: 21300000, guid: de6a01e74257e3f4c88130390d250cde, type: 3}
+  - {fileID: 21300000, guid: c0c53b7c7f3d904489e997b3388085a6, type: 3}
+  - {fileID: 21300000, guid: f66941595a577d74b91ee56445b385b2, type: 3}
+  - {fileID: 21300000, guid: ecc258357160fa242bafed718cbcafbe, type: 3}
+  - {fileID: 21300000, guid: 04a1936217b4e5e45995e75162bf1044, type: 3}
+  - {fileID: 21300000, guid: 9bed9514fcbf16f459b1ce7f606f7a4a, type: 3}
+  - {fileID: 21300000, guid: 9c2a752a80133004584c94f17f328bc3, type: 3}
+  - {fileID: 21300000, guid: 9b03514e2f49a354e8e717785c6a28de, type: 3}
+  - {fileID: 21300000, guid: a653b807fad82d143b4b956cfa88ca83, type: 3}
   isLatest: 0
 --- !u!1 &1230770012
 GameObject:
@@ -5701,6 +5766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e3e9016751a474d91d19e2cd373037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   board: {fileID: 956478171}
   boxFaceSprites:
   - {fileID: 21300000, guid: 981c688580386604da649a77bb830558, type: 3}
@@ -5731,6 +5797,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5fa0dfd755b5bf247970d588e501fccf, type: 3}
   - {fileID: 21300000, guid: 99bf040d780b2804e826e4b549c7522e, type: 3}
   - {fileID: 21300000, guid: de6a01e74257e3f4c88130390d250cde, type: 3}
+  - {fileID: 21300000, guid: c0c53b7c7f3d904489e997b3388085a6, type: 3}
+  - {fileID: 21300000, guid: f66941595a577d74b91ee56445b385b2, type: 3}
+  - {fileID: 21300000, guid: ecc258357160fa242bafed718cbcafbe, type: 3}
+  - {fileID: 21300000, guid: 04a1936217b4e5e45995e75162bf1044, type: 3}
+  - {fileID: 21300000, guid: 9bed9514fcbf16f459b1ce7f606f7a4a, type: 3}
+  - {fileID: 21300000, guid: 9c2a752a80133004584c94f17f328bc3, type: 3}
+  - {fileID: 21300000, guid: 9b03514e2f49a354e8e717785c6a28de, type: 3}
+  - {fileID: 21300000, guid: a653b807fad82d143b4b956cfa88ca83, type: 3}
   isLatest: 0
 --- !u!1 &1308738641 stripped
 GameObject:
@@ -5749,6 +5823,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e3e9016751a474d91d19e2cd373037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   board: {fileID: 956478171}
   boxFaceSprites:
   - {fileID: 21300000, guid: 981c688580386604da649a77bb830558, type: 3}
@@ -5779,6 +5854,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5fa0dfd755b5bf247970d588e501fccf, type: 3}
   - {fileID: 21300000, guid: 99bf040d780b2804e826e4b549c7522e, type: 3}
   - {fileID: 21300000, guid: de6a01e74257e3f4c88130390d250cde, type: 3}
+  - {fileID: 21300000, guid: c0c53b7c7f3d904489e997b3388085a6, type: 3}
+  - {fileID: 21300000, guid: f66941595a577d74b91ee56445b385b2, type: 3}
+  - {fileID: 21300000, guid: ecc258357160fa242bafed718cbcafbe, type: 3}
+  - {fileID: 21300000, guid: 04a1936217b4e5e45995e75162bf1044, type: 3}
+  - {fileID: 21300000, guid: 9bed9514fcbf16f459b1ce7f606f7a4a, type: 3}
+  - {fileID: 21300000, guid: 9c2a752a80133004584c94f17f328bc3, type: 3}
+  - {fileID: 21300000, guid: 9b03514e2f49a354e8e717785c6a28de, type: 3}
+  - {fileID: 21300000, guid: a653b807fad82d143b4b956cfa88ca83, type: 3}
   isLatest: 0
 --- !u!1 &1310163737
 GameObject:
@@ -6352,6 +6435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e3e9016751a474d91d19e2cd373037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   board: {fileID: 956478171}
   boxFaceSprites:
   - {fileID: 21300000, guid: 981c688580386604da649a77bb830558, type: 3}
@@ -6382,6 +6466,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5fa0dfd755b5bf247970d588e501fccf, type: 3}
   - {fileID: 21300000, guid: 99bf040d780b2804e826e4b549c7522e, type: 3}
   - {fileID: 21300000, guid: de6a01e74257e3f4c88130390d250cde, type: 3}
+  - {fileID: 21300000, guid: c0c53b7c7f3d904489e997b3388085a6, type: 3}
+  - {fileID: 21300000, guid: f66941595a577d74b91ee56445b385b2, type: 3}
+  - {fileID: 21300000, guid: ecc258357160fa242bafed718cbcafbe, type: 3}
+  - {fileID: 21300000, guid: 04a1936217b4e5e45995e75162bf1044, type: 3}
+  - {fileID: 21300000, guid: 9bed9514fcbf16f459b1ce7f606f7a4a, type: 3}
+  - {fileID: 21300000, guid: 9c2a752a80133004584c94f17f328bc3, type: 3}
+  - {fileID: 21300000, guid: 9b03514e2f49a354e8e717785c6a28de, type: 3}
+  - {fileID: 21300000, guid: a653b807fad82d143b4b956cfa88ca83, type: 3}
   isLatest: 0
 --- !u!224 &1379384801 stripped
 RectTransform:
@@ -6405,6 +6497,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 987aa6470148faf4498a3ae449c7b59a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   switchSpriteList:
   - {fileID: 21300000, guid: 86a39a5bb6ce6f146aa95f4e0111d9b3, type: 3}
   - {fileID: 21300000, guid: d5f84e840c6b7a04cb70a17a80033613, type: 3}
@@ -6659,6 +6752,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e3e9016751a474d91d19e2cd373037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   board: {fileID: 956478171}
   boxFaceSprites:
   - {fileID: 21300000, guid: 981c688580386604da649a77bb830558, type: 3}
@@ -6689,6 +6783,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5fa0dfd755b5bf247970d588e501fccf, type: 3}
   - {fileID: 21300000, guid: 99bf040d780b2804e826e4b549c7522e, type: 3}
   - {fileID: 21300000, guid: de6a01e74257e3f4c88130390d250cde, type: 3}
+  - {fileID: 21300000, guid: c0c53b7c7f3d904489e997b3388085a6, type: 3}
+  - {fileID: 21300000, guid: f66941595a577d74b91ee56445b385b2, type: 3}
+  - {fileID: 21300000, guid: ecc258357160fa242bafed718cbcafbe, type: 3}
+  - {fileID: 21300000, guid: 04a1936217b4e5e45995e75162bf1044, type: 3}
+  - {fileID: 21300000, guid: 9bed9514fcbf16f459b1ce7f606f7a4a, type: 3}
+  - {fileID: 21300000, guid: 9c2a752a80133004584c94f17f328bc3, type: 3}
+  - {fileID: 21300000, guid: 9b03514e2f49a354e8e717785c6a28de, type: 3}
+  - {fileID: 21300000, guid: a653b807fad82d143b4b956cfa88ca83, type: 3}
   isLatest: 0
 --- !u!1001 &1490825865
 PrefabInstance:
@@ -6999,6 +7101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 987aa6470148faf4498a3ae449c7b59a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   switchSpriteList:
   - {fileID: 21300000, guid: 86a39a5bb6ce6f146aa95f4e0111d9b3, type: 3}
   - {fileID: 21300000, guid: d5f84e840c6b7a04cb70a17a80033613, type: 3}
@@ -7096,6 +7199,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 987aa6470148faf4498a3ae449c7b59a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   switchSpriteList:
   - {fileID: 21300000, guid: 86a39a5bb6ce6f146aa95f4e0111d9b3, type: 3}
   - {fileID: 21300000, guid: d5f84e840c6b7a04cb70a17a80033613, type: 3}
@@ -7348,6 +7452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e3e9016751a474d91d19e2cd373037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   board: {fileID: 956478171}
   boxFaceSprites:
   - {fileID: 21300000, guid: 981c688580386604da649a77bb830558, type: 3}
@@ -7378,6 +7483,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5fa0dfd755b5bf247970d588e501fccf, type: 3}
   - {fileID: 21300000, guid: 99bf040d780b2804e826e4b549c7522e, type: 3}
   - {fileID: 21300000, guid: de6a01e74257e3f4c88130390d250cde, type: 3}
+  - {fileID: 21300000, guid: c0c53b7c7f3d904489e997b3388085a6, type: 3}
+  - {fileID: 21300000, guid: f66941595a577d74b91ee56445b385b2, type: 3}
+  - {fileID: 21300000, guid: ecc258357160fa242bafed718cbcafbe, type: 3}
+  - {fileID: 21300000, guid: 04a1936217b4e5e45995e75162bf1044, type: 3}
+  - {fileID: 21300000, guid: 9bed9514fcbf16f459b1ce7f606f7a4a, type: 3}
+  - {fileID: 21300000, guid: 9c2a752a80133004584c94f17f328bc3, type: 3}
+  - {fileID: 21300000, guid: 9b03514e2f49a354e8e717785c6a28de, type: 3}
+  - {fileID: 21300000, guid: a653b807fad82d143b4b956cfa88ca83, type: 3}
   isLatest: 0
 --- !u!1 &1616390088 stripped
 GameObject:
@@ -7396,6 +7509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e3e9016751a474d91d19e2cd373037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   board: {fileID: 956478171}
   boxFaceSprites:
   - {fileID: 21300000, guid: 981c688580386604da649a77bb830558, type: 3}
@@ -7426,6 +7540,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5fa0dfd755b5bf247970d588e501fccf, type: 3}
   - {fileID: 21300000, guid: 99bf040d780b2804e826e4b549c7522e, type: 3}
   - {fileID: 21300000, guid: de6a01e74257e3f4c88130390d250cde, type: 3}
+  - {fileID: 21300000, guid: c0c53b7c7f3d904489e997b3388085a6, type: 3}
+  - {fileID: 21300000, guid: f66941595a577d74b91ee56445b385b2, type: 3}
+  - {fileID: 21300000, guid: ecc258357160fa242bafed718cbcafbe, type: 3}
+  - {fileID: 21300000, guid: 04a1936217b4e5e45995e75162bf1044, type: 3}
+  - {fileID: 21300000, guid: 9bed9514fcbf16f459b1ce7f606f7a4a, type: 3}
+  - {fileID: 21300000, guid: 9c2a752a80133004584c94f17f328bc3, type: 3}
+  - {fileID: 21300000, guid: 9b03514e2f49a354e8e717785c6a28de, type: 3}
+  - {fileID: 21300000, guid: a653b807fad82d143b4b956cfa88ca83, type: 3}
   isLatest: 0
 --- !u!1001 &1639438719
 PrefabInstance:
@@ -7601,6 +7723,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e3e9016751a474d91d19e2cd373037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   board: {fileID: 956478171}
   boxFaceSprites:
   - {fileID: 21300000, guid: 981c688580386604da649a77bb830558, type: 3}
@@ -7631,6 +7754,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5fa0dfd755b5bf247970d588e501fccf, type: 3}
   - {fileID: 21300000, guid: 99bf040d780b2804e826e4b549c7522e, type: 3}
   - {fileID: 21300000, guid: de6a01e74257e3f4c88130390d250cde, type: 3}
+  - {fileID: 21300000, guid: c0c53b7c7f3d904489e997b3388085a6, type: 3}
+  - {fileID: 21300000, guid: f66941595a577d74b91ee56445b385b2, type: 3}
+  - {fileID: 21300000, guid: ecc258357160fa242bafed718cbcafbe, type: 3}
+  - {fileID: 21300000, guid: 04a1936217b4e5e45995e75162bf1044, type: 3}
+  - {fileID: 21300000, guid: 9bed9514fcbf16f459b1ce7f606f7a4a, type: 3}
+  - {fileID: 21300000, guid: 9c2a752a80133004584c94f17f328bc3, type: 3}
+  - {fileID: 21300000, guid: 9b03514e2f49a354e8e717785c6a28de, type: 3}
+  - {fileID: 21300000, guid: a653b807fad82d143b4b956cfa88ca83, type: 3}
   isLatest: 0
 --- !u!224 &1668188493 stripped
 RectTransform:
@@ -7649,6 +7780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e3e9016751a474d91d19e2cd373037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   board: {fileID: 956478171}
   boxFaceSprites:
   - {fileID: 21300000, guid: 981c688580386604da649a77bb830558, type: 3}
@@ -7679,6 +7811,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5fa0dfd755b5bf247970d588e501fccf, type: 3}
   - {fileID: 21300000, guid: 99bf040d780b2804e826e4b549c7522e, type: 3}
   - {fileID: 21300000, guid: de6a01e74257e3f4c88130390d250cde, type: 3}
+  - {fileID: 21300000, guid: c0c53b7c7f3d904489e997b3388085a6, type: 3}
+  - {fileID: 21300000, guid: f66941595a577d74b91ee56445b385b2, type: 3}
+  - {fileID: 21300000, guid: ecc258357160fa242bafed718cbcafbe, type: 3}
+  - {fileID: 21300000, guid: 04a1936217b4e5e45995e75162bf1044, type: 3}
+  - {fileID: 21300000, guid: 9bed9514fcbf16f459b1ce7f606f7a4a, type: 3}
+  - {fileID: 21300000, guid: 9c2a752a80133004584c94f17f328bc3, type: 3}
+  - {fileID: 21300000, guid: 9b03514e2f49a354e8e717785c6a28de, type: 3}
+  - {fileID: 21300000, guid: a653b807fad82d143b4b956cfa88ca83, type: 3}
   isLatest: 0
 --- !u!1 &1737015083
 GameObject:
@@ -7810,6 +7950,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e3e9016751a474d91d19e2cd373037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   board: {fileID: 956478171}
   boxFaceSprites:
   - {fileID: 21300000, guid: 981c688580386604da649a77bb830558, type: 3}
@@ -7840,6 +7981,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5fa0dfd755b5bf247970d588e501fccf, type: 3}
   - {fileID: 21300000, guid: 99bf040d780b2804e826e4b549c7522e, type: 3}
   - {fileID: 21300000, guid: de6a01e74257e3f4c88130390d250cde, type: 3}
+  - {fileID: 21300000, guid: c0c53b7c7f3d904489e997b3388085a6, type: 3}
+  - {fileID: 21300000, guid: f66941595a577d74b91ee56445b385b2, type: 3}
+  - {fileID: 21300000, guid: ecc258357160fa242bafed718cbcafbe, type: 3}
+  - {fileID: 21300000, guid: 04a1936217b4e5e45995e75162bf1044, type: 3}
+  - {fileID: 21300000, guid: 9bed9514fcbf16f459b1ce7f606f7a4a, type: 3}
+  - {fileID: 21300000, guid: 9c2a752a80133004584c94f17f328bc3, type: 3}
+  - {fileID: 21300000, guid: 9b03514e2f49a354e8e717785c6a28de, type: 3}
+  - {fileID: 21300000, guid: a653b807fad82d143b4b956cfa88ca83, type: 3}
   isLatest: 0
 --- !u!224 &1781412882 stripped
 RectTransform:
@@ -7858,6 +8007,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 987aa6470148faf4498a3ae449c7b59a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   switchSpriteList:
   - {fileID: 21300000, guid: 86a39a5bb6ce6f146aa95f4e0111d9b3, type: 3}
   - {fileID: 21300000, guid: d5f84e840c6b7a04cb70a17a80033613, type: 3}
@@ -8374,6 +8524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e3e9016751a474d91d19e2cd373037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   board: {fileID: 956478171}
   boxFaceSprites:
   - {fileID: 21300000, guid: 981c688580386604da649a77bb830558, type: 3}
@@ -8404,6 +8555,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5fa0dfd755b5bf247970d588e501fccf, type: 3}
   - {fileID: 21300000, guid: 99bf040d780b2804e826e4b549c7522e, type: 3}
   - {fileID: 21300000, guid: de6a01e74257e3f4c88130390d250cde, type: 3}
+  - {fileID: 21300000, guid: c0c53b7c7f3d904489e997b3388085a6, type: 3}
+  - {fileID: 21300000, guid: f66941595a577d74b91ee56445b385b2, type: 3}
+  - {fileID: 21300000, guid: ecc258357160fa242bafed718cbcafbe, type: 3}
+  - {fileID: 21300000, guid: 04a1936217b4e5e45995e75162bf1044, type: 3}
+  - {fileID: 21300000, guid: 9bed9514fcbf16f459b1ce7f606f7a4a, type: 3}
+  - {fileID: 21300000, guid: 9c2a752a80133004584c94f17f328bc3, type: 3}
+  - {fileID: 21300000, guid: 9b03514e2f49a354e8e717785c6a28de, type: 3}
+  - {fileID: 21300000, guid: a653b807fad82d143b4b956cfa88ca83, type: 3}
   isLatest: 0
 --- !u!1 &1881572225 stripped
 GameObject:
@@ -8541,6 +8700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e3e9016751a474d91d19e2cd373037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   board: {fileID: 956478171}
   boxFaceSprites:
   - {fileID: 21300000, guid: 981c688580386604da649a77bb830558, type: 3}
@@ -8571,6 +8731,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5fa0dfd755b5bf247970d588e501fccf, type: 3}
   - {fileID: 21300000, guid: 99bf040d780b2804e826e4b549c7522e, type: 3}
   - {fileID: 21300000, guid: de6a01e74257e3f4c88130390d250cde, type: 3}
+  - {fileID: 21300000, guid: c0c53b7c7f3d904489e997b3388085a6, type: 3}
+  - {fileID: 21300000, guid: f66941595a577d74b91ee56445b385b2, type: 3}
+  - {fileID: 21300000, guid: ecc258357160fa242bafed718cbcafbe, type: 3}
+  - {fileID: 21300000, guid: 04a1936217b4e5e45995e75162bf1044, type: 3}
+  - {fileID: 21300000, guid: 9bed9514fcbf16f459b1ce7f606f7a4a, type: 3}
+  - {fileID: 21300000, guid: 9c2a752a80133004584c94f17f328bc3, type: 3}
+  - {fileID: 21300000, guid: 9b03514e2f49a354e8e717785c6a28de, type: 3}
+  - {fileID: 21300000, guid: a653b807fad82d143b4b956cfa88ca83, type: 3}
   isLatest: 0
 --- !u!1 &1899503784 stripped
 GameObject:
@@ -8589,6 +8757,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e3e9016751a474d91d19e2cd373037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   board: {fileID: 956478171}
   boxFaceSprites:
   - {fileID: 21300000, guid: 981c688580386604da649a77bb830558, type: 3}
@@ -8619,6 +8788,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5fa0dfd755b5bf247970d588e501fccf, type: 3}
   - {fileID: 21300000, guid: 99bf040d780b2804e826e4b549c7522e, type: 3}
   - {fileID: 21300000, guid: de6a01e74257e3f4c88130390d250cde, type: 3}
+  - {fileID: 21300000, guid: c0c53b7c7f3d904489e997b3388085a6, type: 3}
+  - {fileID: 21300000, guid: f66941595a577d74b91ee56445b385b2, type: 3}
+  - {fileID: 21300000, guid: ecc258357160fa242bafed718cbcafbe, type: 3}
+  - {fileID: 21300000, guid: 04a1936217b4e5e45995e75162bf1044, type: 3}
+  - {fileID: 21300000, guid: 9bed9514fcbf16f459b1ce7f606f7a4a, type: 3}
+  - {fileID: 21300000, guid: 9c2a752a80133004584c94f17f328bc3, type: 3}
+  - {fileID: 21300000, guid: 9b03514e2f49a354e8e717785c6a28de, type: 3}
+  - {fileID: 21300000, guid: a653b807fad82d143b4b956cfa88ca83, type: 3}
   isLatest: 0
 --- !u!1 &1927722697
 GameObject:
@@ -8833,6 +9010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e3e9016751a474d91d19e2cd373037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   board: {fileID: 956478171}
   boxFaceSprites:
   - {fileID: 21300000, guid: 981c688580386604da649a77bb830558, type: 3}
@@ -8863,6 +9041,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5fa0dfd755b5bf247970d588e501fccf, type: 3}
   - {fileID: 21300000, guid: 99bf040d780b2804e826e4b549c7522e, type: 3}
   - {fileID: 21300000, guid: de6a01e74257e3f4c88130390d250cde, type: 3}
+  - {fileID: 21300000, guid: c0c53b7c7f3d904489e997b3388085a6, type: 3}
+  - {fileID: 21300000, guid: f66941595a577d74b91ee56445b385b2, type: 3}
+  - {fileID: 21300000, guid: ecc258357160fa242bafed718cbcafbe, type: 3}
+  - {fileID: 21300000, guid: 04a1936217b4e5e45995e75162bf1044, type: 3}
+  - {fileID: 21300000, guid: 9bed9514fcbf16f459b1ce7f606f7a4a, type: 3}
+  - {fileID: 21300000, guid: 9c2a752a80133004584c94f17f328bc3, type: 3}
+  - {fileID: 21300000, guid: 9b03514e2f49a354e8e717785c6a28de, type: 3}
+  - {fileID: 21300000, guid: a653b807fad82d143b4b956cfa88ca83, type: 3}
   isLatest: 0
 --- !u!1 &2005018280 stripped
 GameObject:
@@ -8881,6 +9067,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 987aa6470148faf4498a3ae449c7b59a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   switchSpriteList:
   - {fileID: 21300000, guid: 86a39a5bb6ce6f146aa95f4e0111d9b3, type: 3}
   - {fileID: 21300000, guid: d5f84e840c6b7a04cb70a17a80033613, type: 3}
@@ -9180,6 +9367,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e3e9016751a474d91d19e2cd373037, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerHandler: {fileID: 1927722700}
   board: {fileID: 956478171}
   boxFaceSprites:
   - {fileID: 21300000, guid: 981c688580386604da649a77bb830558, type: 3}
@@ -9210,6 +9398,14 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 5fa0dfd755b5bf247970d588e501fccf, type: 3}
   - {fileID: 21300000, guid: 99bf040d780b2804e826e4b549c7522e, type: 3}
   - {fileID: 21300000, guid: de6a01e74257e3f4c88130390d250cde, type: 3}
+  - {fileID: 21300000, guid: c0c53b7c7f3d904489e997b3388085a6, type: 3}
+  - {fileID: 21300000, guid: f66941595a577d74b91ee56445b385b2, type: 3}
+  - {fileID: 21300000, guid: ecc258357160fa242bafed718cbcafbe, type: 3}
+  - {fileID: 21300000, guid: 04a1936217b4e5e45995e75162bf1044, type: 3}
+  - {fileID: 21300000, guid: 9bed9514fcbf16f459b1ce7f606f7a4a, type: 3}
+  - {fileID: 21300000, guid: 9c2a752a80133004584c94f17f328bc3, type: 3}
+  - {fileID: 21300000, guid: 9b03514e2f49a354e8e717785c6a28de, type: 3}
+  - {fileID: 21300000, guid: a653b807fad82d143b4b956cfa88ca83, type: 3}
   isLatest: 0
 --- !u!1001 &2047871930
 PrefabInstance:
