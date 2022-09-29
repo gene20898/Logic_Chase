@@ -36,7 +36,10 @@ public class Gate : MonoBehaviour, IDropHandler
         if(inputRow != -1) boxText.text = inputLabel[inputRow];
         else boxText.text = "";
         boxText.enabled = true;
+        renderGateImage(type, input1, input2);
+    }
 
+    public void renderGateImage(string type){
         int off_set1 = input2;
         int off_set2 = input1*2;
 

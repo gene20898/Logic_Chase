@@ -83,16 +83,15 @@ public class PlayerActionHandler : MonoBehaviour
             else{
                 state = State.SelectGate;
             }
-        }
-        
+        }    
     }
 
     public void onClickCell(Gate gate)
     {
         if(state == State.SelectGate)
         {
-            //Debug.Log("clickGate");
             gateIndex = gate.transform.GetSiblingIndex();
+            gate.renderGateImage()
             state = State.SelectInput;
             UseCard();
         }
@@ -128,4 +127,5 @@ public class PlayerActionHandler : MonoBehaviour
             updateCardUI();
         }
     }
+    
 }
