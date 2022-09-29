@@ -14,8 +14,10 @@ public class Board : MonoBehaviour
     public GameObject menuButton;
     public GameObject Gate;
     public GameObject Switch;
-    public GameObject winScreen;
-    public GameObject loseScreen;
+    public GameObject winImg;
+    public GameObject loseImg;
+    public GameObject retryBtn;
+    public GameObject quitBtn;
 
     Gate[] gates;
     Switch[] switchList;
@@ -64,6 +66,12 @@ public class Board : MonoBehaviour
         // Set buttons to active
         drawButton.SetActive(true);
         menuButton.SetActive(true);
+
+        winImg.SetActive(false);
+        loseImg.SetActive(false);
+        retryBtn.SetActive(false);
+        quitBtn.SetActive(false);
+
         
         ClearBoard();
         ResetOutput();
@@ -278,13 +286,17 @@ public class Board : MonoBehaviour
         {
             Debug.Log("Player wins");
             gameOver();
-            // winScreen.SetActive(true);
+            winImg.SetActive(true);
+            retryBtn.SetActive(true);
+            quitBtn.SetActive(true);
         }
         else if (bot != null && currentOutput == bot.GetGoal())
         {
             Debug.Log("Bot wins");
             gameOver();
-            // loseScreen.SetActive(true);
+            loseImg.SetActive(true);
+            retryBtn.SetActive(true);
+            quitBtn.SetActive(true);
         }
         return true;
     }

@@ -69,6 +69,7 @@ public class PlayerActionHandler : MonoBehaviour
         if (state == State.WaitForMove)
         {
             player.DrawCard();
+            
         }
     }
 
