@@ -7,6 +7,7 @@ using TMPro;
 
 public class Gate : MonoBehaviour, IDropHandler
 {
+    public PlayerActionHandler playerHandler;
     string type;
     int input;
     public Board board;
@@ -14,7 +15,7 @@ public class Gate : MonoBehaviour, IDropHandler
     Image boxFace;
     public Sprite[] boxFaceSprites;
     Button button;
-    
+
     public bool isLatest = false;
 
     // Start is called before the first frame update
@@ -36,10 +37,7 @@ public class Gate : MonoBehaviour, IDropHandler
         if(inputRow != -1) boxText.text = inputLabel[inputRow];
         else boxText.text = "";
         boxText.enabled = true;
-        renderGateImage(type, input1, input2);
-    }
 
-    public void renderGateImage(string type){
         int off_set1 = input2;
         int off_set2 = input1*2;
 
@@ -54,6 +52,24 @@ public class Gate : MonoBehaviour, IDropHandler
             case "XNOR": boxFace.sprite = boxFaceSprites[20 + off_set1 + off_set2]; break;
             case "XOR": boxFace.sprite = boxFaceSprites[24 + off_set1 + off_set2]; break;
             default: boxFace.sprite = boxFaceSprites[18]; break;
+        }
+    }
+
+    public void setPreviewGateImage(string type){
+        const int off_set = 28;
+        boxText.text = "";
+        boxText.enabled = false;
+        switch (type)
+        {
+            case "AND": boxFace.sprite = boxFaceSprites[off_set]; break;
+            case "NAND": boxFace.sprite = boxFaceSprites[off_set + 1]; break;
+            case "NOR": boxFace.sprite = boxFaceSprites[off_set + 2]; break;
+            case "NOT": boxFace.sprite = boxFaceSprites[off_set + 3]; break;
+            case "OR": boxFace.sprite = boxFaceSprites[off_set + 4]; break;
+            case "Wire": boxFace.sprite = boxFaceSprites[off_set + 5]; break;
+            case "XNOR": boxFace.sprite = boxFaceSprites[off_set + 6]; break;
+            case "XOR": boxFace.sprite = boxFaceSprites[off_set + 7]; break;
+            default: boxFace.sprite = boxFaceSprites[off_set + 5]; break;
         }
     }
 
@@ -77,7 +93,12 @@ public class Gate : MonoBehaviour, IDropHandler
     }
 
     public void OnDrop(PointerEventData eventData){
-        Debug.Log(type+" on drop");
+        if(button.interactable == true){
+            GameObject dropped = eventData.pointerDrag; 
+            Card card = dropped.GetComponent<Card>();
+            playerHandler.onClickCard(card);  
+            playerHandler.onClickCell(this);
+        }
     }
 }
 

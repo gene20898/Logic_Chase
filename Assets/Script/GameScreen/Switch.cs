@@ -2,16 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class Switch : MonoBehaviour
+
+public class Switch : MonoBehaviour, IDropHandler
 {
+    public PlayerActionHandler playerHandler;
     Image switchSprite;
     public Sprite[] switchSpriteList;
     public Board board;
     bool isLatest = false;
+    Button button;
 
     void Awake(){
         switchSprite = gameObject.GetComponent<Image>();
+        button = gameObject.GetComponent<Button>();
         board.OnReset += reset;
     }
 
@@ -33,9 +38,24 @@ public class Switch : MonoBehaviour
         switchSprite.sprite = switchSpriteList[0];
     }
 
-    public void unSetLatestMove(){
-        if(isLatest){
-            isLatest = false;
+    public void setLatestMove()
+    {
+        isLatest = true;
+        button.interactable = false;
+    }
+
+    public void unSetLatestMove()
+    {
+        isLatest = false;
+        button.interactable = true;
+    }
+
+    public void OnDrop(PointerEventData eventData){
+        if(button.interactable == true){
+            GameObject dropped = eventData.pointerDrag; 
+            Card card = dropped.GetComponent<Card>();
+            playerHandler.onClickCard(card);  
+            playerHandler.onClickSwitch(this);
         }
     }
 }

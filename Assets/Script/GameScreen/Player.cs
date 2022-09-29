@@ -144,4 +144,9 @@ public class Player : MonoBehaviour
             return false;
         }
     }
+    
+
+    public string getCardType(int index){
+        return cards[index];
+    }
 }

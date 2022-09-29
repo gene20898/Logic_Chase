@@ -66,7 +66,7 @@ public class PlayerActionHandler : MonoBehaviour
 
     public void onClickDraw()
     {
-        if (state == State.WaitForMove)
+        if (state == State.WaitForMove || state == State.SelectSwitch || state == State.SelectGate)
         {
             player.DrawCard();
         }
@@ -91,9 +91,35 @@ public class PlayerActionHandler : MonoBehaviour
         if(state == State.SelectGate)
         {
             gateIndex = gate.transform.GetSiblingIndex();
-            gate.renderGateImage()
+            previewGate(gate, selectedCardIndex);
             state = State.SelectInput;
             UseCard();
+        }
+    }
+
+    void previewGate(Gate gate, int index){
+        if(selectedCardIndex != -1){
+            gate.GetComponent<Gate>().setPreviewGateImage(player.getCardType(index));
+            List<string> cards = new List<string>(player.GetCard());
+            for(int i=0, j=0; i<cards.Count; i++){
+                Debug.Log("Before:" +cards[i]);
+            }
+            cards.RemoveAt(selectedCardIndex);
+            for(int i=0, j=0; i<cards.Count; i++){
+                Debug.Log("After:" +cards[i]);
+            }
+            for (int i = 0; i < cardSlots.Length; i++)
+            {
+                if (i < cards.Count)
+                {
+                    Debug.Log("Render:" + cards[i]);
+                    cardSlots[i].setCardUI(cards[i]);
+                }
+                else
+                {
+                    cardSlots[i].clearUI();
+                }
+            }
         }
     }
 

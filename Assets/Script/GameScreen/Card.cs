@@ -21,10 +21,15 @@ public class Card : MonoBehaviour
 
     public void setCard(string cardType, int cardIndex)
     {
-        type = cardType;
+        this.type = cardType;
         index = cardIndex;
-        cardText.text = type;
-        switch(type){
+        setCardUI(type);
+    }
+
+    public void setCardUI(string cardType)
+    {
+        cardText.text = cardType;
+        switch(cardType){
             case "AND": cardFace.sprite = cardFaceSprites[0]; break;
             case "NAND": cardFace.sprite = cardFaceSprites[1]; break;
             case "NOR": cardFace.sprite = cardFaceSprites[2]; break;
@@ -44,6 +49,11 @@ public class Card : MonoBehaviour
     public void clearSlot()
     {
         type = "";
+        clearUI();
+    }
+
+    public void clearUI()
+    {
         cardText.text = "";
         cardFace.sprite = cardFaceSprites[5];
         cardText.enabled = false;
