@@ -69,6 +69,7 @@ public class PlayerActionHandler : MonoBehaviour
         if (state == State.WaitForMove || state == State.SelectSwitch || state == State.SelectGate)
         {
             player.DrawCard();
+            
         }
     }
 

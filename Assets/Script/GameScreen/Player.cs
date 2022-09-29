@@ -69,9 +69,9 @@ public class Player : MonoBehaviour
     }
 
     void AddCard(int amount){
-        void randomCard(int n)
+        void randomCard()
         {
-            int num = UnityEngine.Random.Range(0, n + 1);
+            int num = UnityEngine.Random.Range(0, 9);
             switch (num)
             {
                 case 0: cards.Add("NOT"); break;
@@ -86,26 +86,9 @@ public class Player : MonoBehaviour
             }
         }
 
-        bool allWires = true;
-        foreach (string card in cards)
+        for (int i = 0; i < amount; i++)
         {
-            if (card != "Wire")
-            {
-                allWires = false;
-                break;
-            }
-        }
-        if (allWires && (cards.Count > 3))
-        {
-            randomCard(8);
-            randomCard(7);
-        }
-        else
-        {
-            for (int i = 0; i < amount; i++)
-            {
-                randomCard(8);
-            }
+            randomCard();
         }
     }
 
