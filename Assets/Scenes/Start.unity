@@ -397,6 +397,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   easyBtn: {fileID: 1025039394}
   hardBtn: {fileID: 1251285043}
+  fileName: Assets/Script/StartScreen/mode.txt
 --- !u!1 &615311085
 GameObject:
   m_ObjectHideFlags: 0
@@ -499,9 +500,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 890461950}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 606ae1bb704a9754aabe56b3cc6f1863, type: 3}
+  m_Script: {fileID: 11500000, guid: 668dfb145fef2a54bb5452fd51f8f10b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  easyBtn: {fileID: 1025039394}
+  hardBtn: {fileID: 1251285043}
+  fileName: Assets/Script/StartScreen/mode.txt
 --- !u!4 &890461952
 Transform:
   m_ObjectHideFlags: 0
