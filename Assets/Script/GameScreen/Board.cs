@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using UnityEngine.SceneManagement;
 
 public class Board : MonoBehaviour
 {
@@ -129,12 +130,14 @@ public class Board : MonoBehaviour
     }
 
     public void ChangeTurn(){
-        if (currentPlayer == player){
-            currentPlayer = bot;
-            bot.StartTurn();
-        } else {
-            currentPlayer = player;
-            player.StartTurn();
+        if(!isGameOver) {
+            if (currentPlayer == player){
+                currentPlayer = bot;
+                bot.StartTurn();
+            } else {
+                currentPlayer = player;
+                player.StartTurn();
+            }
         }
     }
 
@@ -311,6 +314,7 @@ public class Board : MonoBehaviour
     }
 
     void gameOver(){
+        isGameOver = true;
         drawButton.SetActive(false);
     }
 
@@ -318,5 +322,18 @@ public class Board : MonoBehaviour
     {
         int[] output = { outputState[3, 0], outputState[3, 1], outputState[3, 2], outputState[3, 3], outputState[3, 4], outputState[3, 5], outputState[3, 6] };
         return output;
+    }
+    public void reset()
+    {
+        GameReset();
+    }
+
+    public void exit()
+    {
+        SceneManager.LoadScene("Assets/Scenes/Start.unity");
+    }
+
+    public void loadRules(){
+        SceneManager.LoadScene("Assets/Scenes/Rule.unity", LoadSceneMode.Additive);
     }
 }
