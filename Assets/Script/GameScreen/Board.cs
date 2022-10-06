@@ -15,10 +15,8 @@ public class Board : MonoBehaviour
     public GameObject menuButton;
     public GameObject Gate;
     public GameObject Switch;
-    public GameObject winImg;
-    public GameObject loseImg;
-    public GameObject retryBtn;
-    public GameObject quitBtn;
+    public GameObject winImg, loseImg, retryBtn, quitBtn;
+    public GameObject submenuBg, resumeBtn, rulesBtn, restartBtn, quitMenuBtn;
 
     Gate[] gates;
     Switch[] switchList;
@@ -72,6 +70,8 @@ public class Board : MonoBehaviour
         loseImg.SetActive(false);
         retryBtn.SetActive(false);
         quitBtn.SetActive(false);
+
+        hideSubmemu();
 
         
         ClearBoard();
@@ -316,6 +316,7 @@ public class Board : MonoBehaviour
     void gameOver(){
         isGameOver = true;
         drawButton.SetActive(false);
+        menuButton.SetActive(false);
     }
 
     public int[] getOutput()
@@ -335,5 +336,24 @@ public class Board : MonoBehaviour
 
     public void loadRules(){
         SceneManager.LoadScene("Assets/Scenes/Rule.unity", LoadSceneMode.Additive);
+    }
+
+    public void hideSubmemu() {
+        submenuBg.SetActive(false);
+        resumeBtn.SetActive(false);
+        rulesBtn.SetActive(false);
+        restartBtn.SetActive(false);
+        quitMenuBtn.SetActive(false);
+        menuButton.SetActive(true);
+        drawButton.SetActive(true);
+    }
+    public void showSubmemu() {
+        submenuBg.SetActive(true);
+        resumeBtn.SetActive(true);
+        rulesBtn.SetActive(true);
+        restartBtn.SetActive(true);
+        quitMenuBtn.SetActive(true);
+        menuButton.SetActive(false);
+        drawButton.SetActive(false);
     }
 }
