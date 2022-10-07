@@ -66,13 +66,8 @@ public class Board : MonoBehaviour
         drawButton.SetActive(true);
         menuButton.SetActive(true);
 
-        winImg.SetActive(false);
-        loseImg.SetActive(false);
-        retryBtn.SetActive(false);
-        quitBtn.SetActive(false);
-
+        hideAfterGame();
         hideSubmemu();
-
         
         ClearBoard();
         ResetOutput();
@@ -289,17 +284,13 @@ public class Board : MonoBehaviour
         {
             Debug.Log("Player wins");
             gameOver();
-            winImg.SetActive(true);
-            retryBtn.SetActive(true);
-            quitBtn.SetActive(true);
+            showAfterGame("win");
         }
         else if (bot != null && currentOutput == bot.GetGoal())
         {
             Debug.Log("Bot wins");
             gameOver();
-            loseImg.SetActive(true);
-            retryBtn.SetActive(true);
-            quitBtn.SetActive(true);
+            showAfterGame("lose");
         }
         return true;
     }
@@ -355,5 +346,17 @@ public class Board : MonoBehaviour
         quitMenuBtn.SetActive(true);
         menuButton.SetActive(false);
         drawButton.SetActive(false);
+    }
+    public void hideAfterGame() {
+        winImg.SetActive(false);
+        loseImg.SetActive(false);
+        retryBtn.SetActive(false);
+        quitBtn.SetActive(false);
+    }
+    public void showAfterGame(string results) {
+        if(results=="win") winImg.SetActive(true);
+        else loseImg.SetActive(true);
+        retryBtn.SetActive(true);
+        quitBtn.SetActive(true);
     }
 }

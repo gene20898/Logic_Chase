@@ -102,11 +102,11 @@ public class PlayerActionHandler : MonoBehaviour
         if(selectedCardIndex != -1){
             gate.GetComponent<Gate>().setPreviewGateImage(player.getCardType(index));
             List<string> cards = new List<string>(player.GetCard());
-            for(int i=0, j=0; i<cards.Count; i++){
+            for(int i=0; i<cards.Count; i++){
                 Debug.Log("Before:" +cards[i]);
             }
             cards.RemoveAt(selectedCardIndex);
-            for(int i=0, j=0; i<cards.Count; i++){
+            for(int i=0; i<cards.Count; i++){
                 Debug.Log("After:" +cards[i]);
             }
             for (int i = 0; i < cardSlots.Length; i++)
