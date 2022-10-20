@@ -16,7 +16,7 @@ public class Board : MonoBehaviour
     public GameObject Gate;
     public GameObject Switch;
     public GameObject winImg, loseImg, retryBtn, quitBtn;
-    public GameObject submenuBg, resumeBtn, rulesBtn, restartBtn, quitMenuBtn;
+    public GameObject submenuBg, resumeBtn, rulesBtn, restartBtn, quitMenuBtn, gamePause;
 
     Gate[] gates;
     Switch[] switchList;
@@ -335,8 +335,7 @@ public class Board : MonoBehaviour
         rulesBtn.SetActive(false);
         restartBtn.SetActive(false);
         quitMenuBtn.SetActive(false);
-        menuButton.SetActive(true);
-        drawButton.SetActive(true);
+        gamePause.SetActive(false);
     }
     public void showSubmemu() {
         submenuBg.SetActive(true);
@@ -344,8 +343,7 @@ public class Board : MonoBehaviour
         rulesBtn.SetActive(true);
         restartBtn.SetActive(true);
         quitMenuBtn.SetActive(true);
-        menuButton.SetActive(false);
-        drawButton.SetActive(false);
+        gamePause.SetActive(true);
     }
     public void hideAfterGame() {
         winImg.SetActive(false);
