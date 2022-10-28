@@ -17,6 +17,8 @@ public class Board : MonoBehaviour
     public GameObject Switch;
     public GameObject winImg, loseImg, retryBtn, quitBtn;
     public GameObject submenuBg, resumeBtn, rulesBtn, restartBtn, quitMenuBtn, gamePause;
+    public GameObject restartTxt, restartYes, restartNo;
+    public GameObject quitTxt, quitYes, quitNo;
 
     Gate[] gates;
     Switch[] switchList;
@@ -330,6 +332,8 @@ public class Board : MonoBehaviour
     }
 
     public void hideSubmemu() {
+        hideRestartConfirm();
+        hideQuitConfirm();
         submenuBg.SetActive(false);
         resumeBtn.SetActive(false);
         rulesBtn.SetActive(false);
@@ -338,12 +342,40 @@ public class Board : MonoBehaviour
         gamePause.SetActive(false);
     }
     public void showSubmemu() {
+        hideRestartConfirm();
+        hideQuitConfirm();
         submenuBg.SetActive(true);
         resumeBtn.SetActive(true);
         rulesBtn.SetActive(true);
         restartBtn.SetActive(true);
         quitMenuBtn.SetActive(true);
         gamePause.SetActive(true);
+    }
+    public void hideRestartConfirm() {
+        restartTxt.SetActive(false);
+        restartYes.SetActive(false);
+        restartNo.SetActive(false);
+    }
+    public void showRestartConfirm() {
+        hideSubmemu();
+        submenuBg.SetActive(true);
+        gamePause.SetActive(true);
+        restartTxt.SetActive(true);
+        restartYes.SetActive(true);
+        restartNo.SetActive(true);
+    }
+    public void hideQuitConfirm() {
+        quitTxt.SetActive(false);
+        quitYes.SetActive(false);
+        quitNo.SetActive(false);
+    }
+    public void showQuitConfirm() {
+        hideSubmemu();
+        submenuBg.SetActive(true);
+        gamePause.SetActive(true);
+        quitTxt.SetActive(true);
+        quitYes.SetActive(true);
+        quitNo.SetActive(true);
     }
     public void hideAfterGame() {
         winImg.SetActive(false);
