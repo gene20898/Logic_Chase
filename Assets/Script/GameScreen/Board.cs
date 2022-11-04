@@ -192,7 +192,7 @@ public class Board : MonoBehaviour
             }
         }
         lastMove = column * 4 + row + 1;
-        updateBoard(row);
+        updateBoard(0);
         gates[column * 3 + row].setLatestMove();
         return true;
     }

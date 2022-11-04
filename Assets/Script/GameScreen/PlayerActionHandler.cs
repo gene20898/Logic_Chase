@@ -2,11 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 public class PlayerActionHandler : MonoBehaviour
 {
     Player player;
     Card[] cardSlots;
+    
+    public GameObject Switch;
+    public GameObject Gate;
+
+    Gate[] gates;
+    Switch[] switches;
+
     int selectedCardIndex = -1;
     int gateIndex = -1;
     int inputRow = -1;
@@ -27,6 +35,9 @@ public class PlayerActionHandler : MonoBehaviour
     {
         player = GetComponent<Player>();
         cardSlots = this.gameObject.GetComponentsInChildren<Card>();
+        gates = Gate.GetComponentsInChildren<Gate>();
+        switches = Switch.GetComponentsInChildren<Switch>();
+
         state = State.WaitForMove;
         player.OnUpdate += updateCardUI;
         player.OnTurnStart += startTurn;
@@ -102,18 +113,11 @@ public class PlayerActionHandler : MonoBehaviour
         if(selectedCardIndex != -1){
             gate.GetComponent<Gate>().setPreviewGateImage(player.getCardType(index));
             List<string> cards = new List<string>(player.GetCard());
-            for(int i=0; i<cards.Count; i++){
-                Debug.Log("Before:" +cards[i]);
-            }
             cards.RemoveAt(selectedCardIndex);
-            for(int i=0; i<cards.Count; i++){
-                Debug.Log("After:" +cards[i]);
-            }
             for (int i = 0; i < cardSlots.Length; i++)
             {
                 if (i < cards.Count)
                 {
-                    Debug.Log("Render:" + cards[i]);
                     cardSlots[i].setCardUI(cards[i]);
                 }
                 else
@@ -121,7 +125,35 @@ public class PlayerActionHandler : MonoBehaviour
                     cardSlots[i].clearUI();
                 }
             }
+            hideInvalidInput2(gate);
         }
+    }
+    
+    void hideInvalidInput2(Gate gate){
+        int index = gate.transform.GetSiblingIndex();
+        int column = index%3;
+        if(column > 0) {
+            for(int i=0; i< gates.Length; i++){
+                gates[i].disable();
+            }
+            for(int i=0; i< gates.Length; i++){
+                if(i!=index-1 && (i%3 == column-1 || i == index)){
+                    gates[i].enable();
+                }
+            }
+        }
+        else {
+            for(int i=0; i< gates.Length; i++){
+                if(i!=index) gates[i].disable();
+            }
+        }
+        for(int i=0; i< switches.Length; i++){
+            switches[i].disable();
+        }
+    }
+
+    void hideInvalidCell(Gate gate){
+
     }
 
     public void onClickSwitch(Switch gate)
@@ -151,8 +183,8 @@ public class PlayerActionHandler : MonoBehaviour
             gateIndex = -1;
             inputRow = -1;
             switchIndex = -1;
+
             updateCardUI();
         }
     }
-    
 }

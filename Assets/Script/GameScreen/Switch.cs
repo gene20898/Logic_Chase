@@ -58,4 +58,12 @@ public class Switch : MonoBehaviour, IDropHandler
             playerHandler.onClickSwitch(this);
         }
     }
+
+     public void disable(){
+        button.interactable = false;
+    }
+
+    public void enable(){
+        button.interactable = true;
+    }
 }

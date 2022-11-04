@@ -92,6 +92,18 @@ public class Gate : MonoBehaviour, IDropHandler
         button.interactable = true;
     }
 
+    public void disable(){
+        button.interactable = false;
+    }
+
+    public void enable(){
+        button.interactable = true;
+    }
+
+    public Button getButton(){
+        return button;
+    }
+
     public void OnDrop(PointerEventData eventData){
         if(button.interactable == true){
             GameObject dropped = eventData.pointerDrag; 
