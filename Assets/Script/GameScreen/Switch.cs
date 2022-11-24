@@ -11,7 +11,7 @@ public class Switch : MonoBehaviour, IDropHandler
     Image switchSprite;
     public Sprite[] switchSpriteList;
     public Board board;
-    bool isLatest = false;
+    public bool isLatest = false;
     Button button;
 
     void Awake(){

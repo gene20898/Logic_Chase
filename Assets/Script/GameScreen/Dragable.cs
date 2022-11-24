@@ -35,5 +35,6 @@ public class Dragable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         transform.SetParent(parentAfterDrag);
         transform.SetSiblingIndex(siblingIndex);
         image.raycastTarget = true;
+        if(eventData.pointerEnter.GetComponent<Gate>() == null) playerHandler.onUnSelectCard();
     }
 }

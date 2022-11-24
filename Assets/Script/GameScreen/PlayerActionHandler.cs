@@ -100,6 +100,14 @@ public class PlayerActionHandler : MonoBehaviour
         }    
     }
 
+    public void onUnSelectCard(){
+        if(state == State.SelectSwitch || state == State.SelectGate){
+            selectedCardIndex = -1;
+            state = State.WaitForMove;
+            unHideInvalidCell();
+        }
+    }
+
     public void onClickCell(Gate gate)
     {
         if(state == State.SelectGate)
@@ -177,10 +185,10 @@ public class PlayerActionHandler : MonoBehaviour
 
     void unHideInvalidCell(){
         for(int i=0; i< gates.Length; i++){
-            gates[i].enable();
+            if(!gates[i].isLatest) gates[i].enable();
         }
         for(int i=0; i< switches.Length; i++){
-            switches[i].enable();
+            if(!switches[i].isLatest) switches[i].enable();
         }
     }
 
