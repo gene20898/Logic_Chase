@@ -106,9 +106,6 @@ public class Gate : MonoBehaviour, IDropHandler
 
     public void OnDrop(PointerEventData eventData){
         if(button.interactable == true){
-            GameObject dropped = eventData.pointerDrag; 
-            Card card = dropped.GetComponent<Card>();
-            playerHandler.onClickCard(card);  
             playerHandler.onClickCell(this);
         }
     }

@@ -9,6 +9,7 @@ public class Dragable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     Transform cardOriginPosision;
     int siblingIndex;
     public Image image;
+    public PlayerActionHandler playerHandler;
     [HideInInspector] public Transform parentAfterDrag;
 
 
@@ -19,12 +20,15 @@ public class Dragable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     public void OnBeginDrag(PointerEventData eventData){
         parentAfterDrag = transform.parent;
         transform.SetParent(transform.root);
-        // transform.SetAsLastSibling();
         image.raycastTarget = false;
     }
 
     public void OnDrag(PointerEventData eventData){
         transform.position = Input.mousePosition;
+        GameObject dragged = eventData.pointerDrag; 
+        Card card = dragged.GetComponent<Card>();
+        playerHandler.onClickCard(card);  
+
     }
 
     public void OnEndDrag(PointerEventData eventData){

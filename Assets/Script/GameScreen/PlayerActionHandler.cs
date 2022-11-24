@@ -95,6 +95,8 @@ public class PlayerActionHandler : MonoBehaviour
             else{
                 state = State.SelectGate;
             }
+            unHideInvalidCell();
+            hideInvalidCell(card);
         }    
     }
 
@@ -132,28 +134,54 @@ public class PlayerActionHandler : MonoBehaviour
     void hideInvalidInput2(Gate gate){
         int index = gate.transform.GetSiblingIndex();
         int column = index%3;
+        int row = index/3;
+
+        disableAllGates();
+
         if(column > 0) {
             for(int i=0; i< gates.Length; i++){
-                gates[i].disable();
-            }
-            for(int i=0; i< gates.Length; i++){
-                if(i!=index-1 && (i%3 == column-1 || i == index)){
-                    gates[i].enable();
-                }
+                if(i%3 == column-1 && i!=index-1) gates[i].enable();
             }
         }
         else {
-            for(int i=0; i< gates.Length; i++){
-                if(i!=index) gates[i].disable();
+            for(int i=0; i< switches.Length; i++){
+                if(i!=row) switches[i].enable();
             }
+        }
+        gates[index].enable();
+    }
+
+    void disableAllGates(){
+        for(int i=0; i< gates.Length; i++){
+                gates[i].disable();
         }
         for(int i=0; i< switches.Length; i++){
             switches[i].disable();
         }
     }
 
-    void hideInvalidCell(Gate gate){
+    void hideInvalidCell(Card card){
+        switch(card.getType()){
+            case "Switch":
+                for(int i=0; i< gates.Length; i++){
+                    gates[i].disable();
+                }
+                break;
+            default:
+                for(int i=0; i< switches.Length; i++){
+                    switches[i].disable();
+                }
+                break;
+        }
+    }
 
+    void unHideInvalidCell(){
+        for(int i=0; i< gates.Length; i++){
+            gates[i].enable();
+        }
+        for(int i=0; i< switches.Length; i++){
+            switches[i].enable();
+        }
     }
 
     public void onClickSwitch(Switch gate)

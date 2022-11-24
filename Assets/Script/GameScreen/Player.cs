@@ -106,7 +106,7 @@ public class Player : MonoBehaviour
     }
 
     public bool UseCard(int cardIndex, int gateIndex = -1, int inputRow = -1, int switchIndex = -1){
-        Debug.Log("CardIndex" + cardIndex + " GateIndex" + gateIndex + " InputRow" + inputRow + " SwitchIndex" + switchIndex);
+        // Debug.Log("CardIndex" + cardIndex + " GateIndex" + gateIndex + " InputRow" + inputRow + " SwitchIndex" + switchIndex);
         string cardType = cards[cardIndex];
         int row = gateIndex % 3;
         int col = gateIndex / 3;

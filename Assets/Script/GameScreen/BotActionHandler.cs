@@ -55,7 +55,7 @@ public class BotActionHandler : MonoBehaviour
     }
 
     public void PlayCard(){
-        Debug.Log(bot.gameObject.name + " action " + actionChoice + " " + gateIndex + " " + inputRow + " " + switchIndex);
+        // Debug.Log(bot.gameObject.name + " action " + actionChoice + " " + gateIndex + " " + inputRow + " " + switchIndex);
         bool result = false;
         int cardIndex = FindCardIndex(actionChoice);
 
