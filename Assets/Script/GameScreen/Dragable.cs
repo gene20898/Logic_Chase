@@ -11,6 +11,7 @@ public class Dragable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
     public Image image;
     public PlayerActionHandler playerHandler;
     [HideInInspector] public Transform parentAfterDrag;
+    bool isDragged = false;
 
 
     void Awake(){
@@ -27,8 +28,10 @@ public class Dragable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         transform.position = Input.mousePosition;
         GameObject dragged = eventData.pointerDrag; 
         Card card = dragged.GetComponent<Card>();
-        playerHandler.onClickCard(card);  
-
+        if(!isDragged) {
+            playerHandler.onClickCard(card);
+            isDragged = true;  
+        }
     }
 
     public void OnEndDrag(PointerEventData eventData){
@@ -36,5 +39,6 @@ public class Dragable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDrag
         transform.SetSiblingIndex(siblingIndex);
         image.raycastTarget = true;
         if(eventData.pointerEnter.GetComponent<Gate>() == null) playerHandler.onUnSelectCard();
+        isDragged = false;
     }
 }
