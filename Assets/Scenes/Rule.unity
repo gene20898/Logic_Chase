@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 201037059}
   - component: {fileID: 201037063}
   - component: {fileID: 201037062}
-  - component: {fileID: 201037061}
+  - component: {fileID: 201037064}
   m_Layer: 5
   m_Name: Next
   m_TagString: Untagged
@@ -162,7 +162,45 @@ RectTransform:
   m_AnchoredPosition: {x: -45, y: 35}
   m_SizeDelta: {x: 229, y: 159}
   m_Pivot: {x: 1, y: 0}
---- !u!114 &201037061
+--- !u!114 &201037062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201037058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: ebb8133387ae65b4fbce1d08ec1536da, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &201037063
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 201037058}
+  m_CullTransparentMesh: 1
+--- !u!114 &201037064
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -207,7 +245,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 381915962}
-        m_TargetAssemblyTypeName: ExitButton, Assembly-CSharp
+        m_TargetAssemblyTypeName: Rules, Assembly-CSharp
         m_MethodName: next
         m_Mode: 1
         m_Arguments:
@@ -218,44 +256,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &201037062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 201037058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d2ed01b48edfe364ba3970d457e79926, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &201037063
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 201037058}
-  m_CullTransparentMesh: 1
 --- !u!1 &381915957
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,29 +371,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 381915957}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dd485ab759bae2458983b6bf59af622, type: 3}
+  m_Script: {fileID: 11500000, guid: 8f21b673c45931740aa27a0da5cff402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rules:
-  - {fileID: 21300000, guid: 2a481d0c2051e0248b2a2f2eb811767a, type: 3}
-  - {fileID: 21300000, guid: a0f05b9656cbc0841af162db433c5a9a, type: 3}
-  - {fileID: 21300000, guid: a49173cfdf736e748ae8615b01433e5b, type: 3}
-  - {fileID: 21300000, guid: 8dab458b2918a8c4cab7d259883bf6cb, type: 3}
-  - {fileID: 21300000, guid: dceaafcaad8581543bcd054362a40ccf, type: 3}
-  - {fileID: 21300000, guid: 42b246c8e6eb8b748ae0c7c624f484d1, type: 3}
-  - {fileID: 21300000, guid: bc722f163a54fd1409a2caca92848a86, type: 3}
-  - {fileID: 21300000, guid: e0b13444357ea164283c60b26daa4c79, type: 3}
-  - {fileID: 21300000, guid: 376026cfe6b596d49962db86d54ce5cd, type: 3}
-  - {fileID: 21300000, guid: a1156433ea85ae04a908e33b7a247387, type: 3}
-  - {fileID: 21300000, guid: 342059aa6f4532644952dffd23605af7, type: 3}
-  - {fileID: 21300000, guid: 28acdcb7f3cd3474ea5115f6ee00b4be, type: 3}
-  - {fileID: 21300000, guid: be18984dd90408c4499c9339b9b05460, type: 3}
-  - {fileID: 21300000, guid: 9f32ab59dd46f4849bd647bf94a7cdf7, type: 3}
-  - {fileID: 21300000, guid: fe9c7eb65e501354aa478a21282c7120, type: 3}
-  - {fileID: 21300000, guid: 3fa08f2fe98aaf44590808d76e9c424d, type: 3}
-  - {fileID: 21300000, guid: 6e6528545c08b884b9ec1ba6777a1524, type: 3}
-  - {fileID: 21300000, guid: e901f1bfc93d1434aa3028149615785e, type: 3}
-  - {fileID: 21300000, guid: cad4807d94c281440a010b40bc09e145, type: 3}
+  - {fileID: 21300000, guid: 52d7de94d5ffe0043a81634f2b702024, type: 3}
+  - {fileID: 21300000, guid: 8b4dfdc9822b4bb458d3549f3131cc56, type: 3}
+  - {fileID: 21300000, guid: 6dfb0601fe3d9bd4b8011a10c7b4573b, type: 3}
+  - {fileID: 21300000, guid: 5b2d66504843fd249bf5ea7c4e6497e5, type: 3}
+  - {fileID: 21300000, guid: b8042d8bcf87d7e4698af77b32279060, type: 3}
+  - {fileID: 21300000, guid: f585412b8cfbe5d4f8d20253c8c31be0, type: 3}
+  - {fileID: 21300000, guid: 77c942f3c8aeee64c96fe559a0b0a125, type: 3}
+  - {fileID: 21300000, guid: 1a6196409d7313b4db50c8274bc74768, type: 3}
+  - {fileID: 21300000, guid: 8161cfdac3169bd4aa9a6eca67380a6f, type: 3}
+  - {fileID: 21300000, guid: 2ceb00a9d838d5a48a197d2842bcccfb, type: 3}
+  - {fileID: 21300000, guid: 502f0f7135d915f459e77a0fb86936af, type: 3}
+  - {fileID: 21300000, guid: ae02dbaa487f2604eb4a59275d8e4370, type: 3}
+  - {fileID: 21300000, guid: 8d3dfb52d1343714a84a780badcda7aa, type: 3}
+  - {fileID: 21300000, guid: 99a957983152bef4ea09de9fbabaaafc, type: 3}
+  - {fileID: 21300000, guid: 783cd55ddb12a1140b25005046f78bdb, type: 3}
+  - {fileID: 21300000, guid: ad993a13982045144a654ca5201fae9f, type: 3}
+  - {fileID: 21300000, guid: 883e2eb4aaceb0043952b95ec374a5d4, type: 3}
+  - {fileID: 21300000, guid: 3c4b5c4791b7c4040ab98e2bc9b4daf5, type: 3}
+  - {fileID: 21300000, guid: 921e50ff86b016e4591cf18ec97003f4, type: 3}
   rule: {fileID: 523209394}
   next_button: {fileID: 201037058}
   prev_button: {fileID: 888983937}
@@ -455,7 +455,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 2a481d0c2051e0248b2a2f2eb811767a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 52d7de94d5ffe0043a81634f2b702024, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -557,7 +557,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 381915962}
-        m_TargetAssemblyTypeName: ExitButton, Assembly-CSharp
+        m_TargetAssemblyTypeName: Rules, Assembly-CSharp
         m_MethodName: prev
         m_Mode: 1
         m_Arguments:
@@ -588,7 +588,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9d421630a01d90749826703af9e58c03, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6ff7ecf3c273f9e4c85ee74c67012031, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -690,7 +690,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 381915962}
-        m_TargetAssemblyTypeName: ExitButton, Assembly-CSharp
+        m_TargetAssemblyTypeName: Rules, Assembly-CSharp
         m_MethodName: exit
         m_Mode: 1
         m_Arguments:
@@ -721,7 +721,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3a5f82cc0a257134ca7833ee530e728e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5eead964e6992674f9ae609eeae6a070, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
