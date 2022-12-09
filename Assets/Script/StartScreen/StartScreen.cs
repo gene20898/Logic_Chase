@@ -53,6 +53,10 @@ public class StartScreen : MonoBehaviour
         SceneManager.LoadScene("Assets/Scenes/Mode.unity", LoadSceneMode.Additive);
     }
 
+    public void loadAbout(){
+        SceneManager.LoadScene("Assets/Scenes/About.unity", LoadSceneMode.Additive);
+    }
+
     public int getModeFromFile() {
         StreamReader sr = new StreamReader(fileName);
         char ch = (char)sr.Read();
