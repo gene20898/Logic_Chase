@@ -1,3 +1,5 @@
+using System.Runtime.Serialization.Json;
+using System;
 using System.Xml.Linq;
 using System.Collections;
 using System.Collections.Generic;
@@ -10,18 +12,13 @@ public class StartScreen : MonoBehaviour
 
     public GameObject easyBtn;
     public GameObject hardBtn;
-    public string fileName = "Assets/Script/StartScreen/mode.txt";
+    public static Boolean isEasyMode = true;
+
     // Start is called before the first frame update
     void Start()
     {
-        if(getModeFromFile()==0) {
-            easyBtn.SetActive(true);
-            hardBtn.SetActive(false);
-        }
-        else {
-            easyBtn.SetActive(false);
-            hardBtn.SetActive(true);
-        }
+        if(isEasyMode) changeToEasy();
+        else changeToHard();
     }
 
     // Update is called once per frame
@@ -34,15 +31,15 @@ public class StartScreen : MonoBehaviour
         SceneManager.LoadScene("Assets/Scenes/Game.unity");
     }
     public void changeToHard(){
-        saveModeToFile(1);
         hardBtn.SetActive(true);
         easyBtn.SetActive(false);
+        isEasyMode = false;
     }
 
     public void changeToEasy(){
-        saveModeToFile(0);
         easyBtn.SetActive(true);
         hardBtn.SetActive(false);
+        isEasyMode = true;
     }
 
     public void loadRules(){
@@ -55,19 +52,5 @@ public class StartScreen : MonoBehaviour
 
     public void loadAbout(){
         SceneManager.LoadScene("Assets/Scenes/About.unity", LoadSceneMode.Additive);
-    }
-
-    public int getModeFromFile() {
-        StreamReader sr = new StreamReader(fileName);
-        char ch = (char)sr.Read();
-        int mode = ch - '0';
-        sr.Close();
-        return mode;
-    }
-
-    public void saveModeToFile(int mode) {
-        StreamWriter sw = new StreamWriter(fileName);
-        sw.WriteLine(mode);
-        sw.Close();
     }
 }

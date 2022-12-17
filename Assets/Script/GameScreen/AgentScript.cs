@@ -24,12 +24,11 @@ public class AgentScript : Agent
     VectorSensorComponent m_GoalSensor;
 
     public NNModel easyBot;
-    public NNModel hardBot;
-    public string fileName = "Assets/Script/StartScreen/mode.txt";
-    
+    public NNModel hardBot;    
+
     void Awake()
     {
-        if(getModeFromFile()==0) GetComponent<Unity.MLAgents.Policies.BehaviorParameters>().Model = easyBot;
+        if(StartScreen.isEasyMode) GetComponent<Unity.MLAgents.Policies.BehaviorParameters>().Model = easyBot;
         else GetComponent<Unity.MLAgents.Policies.BehaviorParameters>().Model = hardBot;
         // if(GameModeManager.gameModeManager.isHard){
         //     GetComponent<Unity.MLAgents.Policies.BehaviorParameters>().Model = hardBot;
@@ -204,12 +203,5 @@ public class AgentScript : Agent
         discreteActionsOut[1] = 0;
         discreteActionsOut[2] = 0;
         discreteActionsOut[3] = 0;
-    }
-    public int getModeFromFile() {
-        StreamReader sr = new StreamReader(fileName);
-        char ch = (char)sr.Read();
-        int mode = ch - '0';
-        sr.Close();
-        return mode;
     }
 }
